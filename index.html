@@ -7,7 +7,6 @@
     <style>
         html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
         
-        /* Top Bar - Counties */
         #county-bar {
             position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
             z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9);
@@ -20,7 +19,6 @@
         }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
 
-        /* Bottom Bar - Categories */
         #filter-bar {
             position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%);
             z-index: 1000; display: flex; gap: 8px; background: rgba(255, 255, 255, 0.95);
@@ -32,7 +30,6 @@
         .filter-item.active img { border: 2px solid #2e7d32; background: #c8e6c9; }
         .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; }
 
-        /* Loader & Tips */
         #loader {
             position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
             z-index: 2000; background: white; padding: 25px; border-radius: 15px;
@@ -40,7 +37,6 @@
         }
         #tip-text { font-size: 13px; color: #555; font-style: italic; margin-top: 10px; display: block; }
 
-        /* Side Buttons */
         .side-btn {
             position: absolute; right: 10px; z-index: 1000;
             background: white; width: 40px; height: 40px; text-align: center;
@@ -48,11 +44,8 @@
             cursor: pointer; font-size: 20px;
         }
         #info-btn { top: 80px; background: #2e7d32; color: white; }
-        #weather-btn { top: 130px; }
-        #weather-btn.active { background: #2196F3; color: white; }
-        #suggest-btn { top: 180px; background: #ff9800; color: white; }
+        #suggest-btn { top: 130px; background: #ff9800; color: white; }
 
-        /* Popup Buttons */
         .btn-container { display: flex; gap: 5px; margin-top: 10px; }
         .map-btn { padding: 8px; border-radius: 5px; font-weight: bold; font-size: 11px; text-decoration: none; text-align: center; flex: 1; cursor: pointer; }
         .dir-btn { background: #2e7d32; color: white !important; }
@@ -68,12 +61,11 @@
 
     <div id="about-box" style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); z-index:3000; background:white; width:85%; max-width:400px; padding:25px; border-radius:15px; box-shadow:0 0 30px rgba(0,0,0,0.4); display:none; text-align:center;">
         <h2 style="color:#2e7d32;">Wee Adventurers NI</h2>
-        <p>Your ultimate guide to family fun across Northern Ireland!</p>
-        <button onclick="document.getElementById('about-box').style.display='none'" style="background:#2e7d32; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold;">Start Exploring!</button>
+        <p>Helping families find the best parks, beaches, and adventures across NI!</p>
+        <button onclick="document.getElementById('about-box').style.display='none'" style="background:#2e7d32; color:white; border:none; padding:10px 20px; border-radius:5px; cursor:pointer; font-weight:bold;">Let's Explore!</button>
     </div>
 
     <div id="info-btn" class="side-btn" onclick="document.getElementById('about-box').style.display='block'">❓</div>
-    <div id="weather-btn" class="side-btn" onclick="toggleWeather()">🌧️</div>
     <div id="suggest-btn" class="side-btn" onclick="window.location.href='mailto:rossnoonan85@gmail.com'">➕</div>
 
     <div id="county-bar">
@@ -125,21 +117,14 @@
 
         var tips = [
             "Tip: Benone Strand in Derry is one of the longest beaches in Ireland!",
-            "Tip: Tyrone has the most forest parks in Northern Ireland!",
-            "Tip: Click the 🚗 button to open Google Maps navigation instantly.",
-            "Tip: Use the 🌧️ button to check for rain before you head out!"
+            "Tip: Tyrone has the most forest parks in NI!",
+            "Tip: Click Directions to open navigation instantly!"
         ];
 
         function showLoader(cat) {
             document.getElementById('loader-status').innerHTML = "🌱 Loading " + cat.toUpperCase() + "...";
             document.getElementById('tip-text').innerHTML = tips[Math.floor(Math.random() * tips.length)];
             document.getElementById('loader').style.display = 'block';
-        }
-
-        var weatherLayer = L.tileLayer('https://tile.openweathermap.org/map/precipitation_new/{z}/{x}/{y}.png?appid=YOUR_API_KEY', { opacity: 0.5 });
-        function toggleWeather() {
-            if (map.hasLayer(weatherLayer)) { map.removeLayer(weatherLayer); document.getElementById('weather-btn').classList.remove('active'); }
-            else { weatherLayer.addTo(map); document.getElementById('weather-btn').classList.add('active'); }
         }
 
         var sproutIcon = L.icon({
@@ -168,30 +153,22 @@
             showLoader(currentCategory);
             if (currentLayer) { map.removeLayer(currentLayer); }
             
-            // FILENAME LOGIC: county-category.kml
             var fileName = currentCounty + '-' + currentCategory + '.kml';
             var safeUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://raw.githubusercontent.com/Nooney96/map-data/main/' + fileName);
 
             var customLayer = L.geoJson(null, {
                 pointToLayer: (f, l) => L.marker(l, {icon: sproutIcon}),
                 onEachFeature: (feature, layer) => {
-                    var lat = layer.getLatLng().lat;
-                    var lng = layer.getLatLng().lng;
+                    var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
                     var gUrl = "https://www.google.com/maps/dir/?api=1&destination=" + lat + "," + lng;
-                    
-                    var content = "<b>"+feature.properties.name+"</b><div class='btn-container'>"+
-                                "<a href='"+gUrl+"' target='_blank' class='map-btn dir-btn'>🚗 Directions</a>"+
-                                "<div onclick='navigator.clipboard.writeText(\""+gUrl+"\").then(()=>alert(\"Link Copied!\"))' class='map-btn share-btn'>🔗 Share</div></div>";
+                    var content = "<b>"+feature.properties.name+"</b><div class='btn-container'><a href='"+gUrl+"' target='_blank' class='map-btn dir-btn'>🚗 Directions</a><div onclick='navigator.clipboard.writeText(\""+gUrl+"\").then(()=>alert(\"Link Copied!\"))' class='map-btn share-btn'>🔗 Share</div></div>";
                     layer.bindPopup(content);
                 }
             });
 
             currentLayer = omnivore.kml(safeUrl, null, customLayer)
                 .on('ready', function() { map.fitBounds(this.getBounds(), { padding: [70, 70] }); document.getElementById('loader').style.display = 'none'; })
-                .on('error', () => { 
-                    document.getElementById('loader').style.display = 'none'; 
-                    alert("No data for " + currentCategory + " in " + currentCounty.toUpperCase() + " yet!"); 
-                })
+                .on('error', () => { document.getElementById('loader').style.display = 'none'; alert("Check back soon for " + currentCategory + " data!"); })
                 .addTo(map);
         }
 
