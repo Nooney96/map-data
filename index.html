@@ -6,18 +6,25 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <style>
         html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
+        
         #county-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); width: 90%; overflow-x: auto; white-space: nowrap; }
         .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
+
         #filter-bar { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 92%; max-width: 650px; overflow-x: auto; justify-content: space-around; }
         .filter-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; min-width: 65px; }
         .filter-item img { width: 28px; height: 28px; background: #f8f8f8; padding: 10px; border-radius: 50%; }
         .filter-item.active img { border: 2px solid #2e7d32; background: #c8e6c9; }
         .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; }
+
         #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 280px; }
-        .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 40px; height: 40px; text-align: center; line-height: 40px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
-        #info-btn { top: 80px; background: #2e7d32; color: white; }
-        #suggest-btn { top: 130px; background: #ff9800; color: white; }
+        
+        /* Side Buttons */
+        .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 42px; height: 42px; text-align: center; line-height: 42px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
+        #locate-btn { top: 80px; color: #2196F3; font-weight: bold; }
+        #info-btn { top: 135px; background: #2e7d32; color: white; }
+        #suggest-btn { top: 190px; background: #ff9800; color: white; }
+
         .btn-container { display: flex; gap: 5px; margin-top: 10px; }
         .map-btn { padding: 8px; border-radius: 5px; font-weight: bold; font-size: 11px; text-decoration: none; text-align: center; flex: 1; cursor: pointer; }
         .dir-btn { background: #2e7d32; color: white !important; }
@@ -25,8 +32,11 @@
     </style>
 </head>
 <body>
-    <div id="loader"><b>🌱 Fetching Adventures...</b></div>
-    <div id="info-btn" class="side-btn" onclick="alert('Wee Adventurers NI: Your guide to family fun!')">❓</div>
+
+    <div id="loader"><b>🌱 Finding Adventures...</b></div>
+
+    <div id="locate-btn" class="side-btn" onclick="locateUser()" title="Find My Location">🎯</div>
+    <div id="info-btn" class="side-btn" onclick="alert('Wee Adventurers NI: Helping you find the best family spots in NI!')">❓</div>
     <div id="suggest-btn" class="side-btn" onclick="window.location.href='mailto:rossnoonan85@gmail.com'">➕</div>
     
     <div id="county-bar">
@@ -62,14 +72,37 @@
     </div>
 
     <div id="map"></div>
+
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+    
     <script>
         var map = L.map('map', { zoomControl: false }).setView([54.60, -6.60], 8);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         
         var currentCounty = 'all', currentCategory = 'playparks', currentLayer;
-        var sproutIcon = L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [41, 41] });
+        var userMarker;
+
+        var sproutIcon = L.icon({ 
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', 
+            iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], 
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [41, 41] 
+        });
+
+        // LOCATE ME FUNCTION
+        function locateUser() {
+            map.locate({setView: true, maxZoom: 14});
+        }
+
+        map.on('locationfound', function(e) {
+            if (userMarker) { map.removeLayer(userMarker); }
+            userMarker = L.circleMarker(e.latlng, {radius: 8, color: '#2196F3', fillOpacity: 0.8}).addTo(map);
+            userMarker.bindPopup("You are here!").openPopup();
+        });
+
+        map.on('locationerror', function() {
+            alert("Location access denied. Please check your phone settings.");
+        });
 
         function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
         function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
@@ -78,11 +111,10 @@
             document.getElementById('loader').style.display = 'block';
             if (currentLayer) { map.removeLayer(currentLayer); }
             
-            // FILENAME LOGIC: county-category.kml
             var fileName = currentCounty + '-' + currentCategory + '.kml';
-            
-            // ALLORIGINS is used to bypass CORS issues when fetching raw GitHub files
-            var safeUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://raw.githubusercontent.com/Nooney96/map-data/main/' + fileName);
+            var cacheBuster = Math.floor(Math.random() * 10000);
+            var githubUrl = 'https://raw.githubusercontent.com/Nooney96/map-data/main/' + fileName + '?v=' + cacheBuster;
+            var safeUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(githubUrl);
 
             var customLayer = L.geoJson(null, {
                 pointToLayer: (f, l) => L.marker(l, {icon: sproutIcon}),
@@ -101,7 +133,7 @@
                 })
                 .on('error', () => { 
                     document.getElementById('loader').style.display = 'none'; 
-                    alert("No data found for: " + fileName + ". Check back soon!"); 
+                    alert("No data found for: " + fileName); 
                 })
                 .addTo(map);
         }
