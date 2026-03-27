@@ -1,0 +1,16 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Airtastic Entertainment Centre Craigavon - Trampoline and Ninja",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3918496, 54.4458701, 0]
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.7665643,
+                    54.6265068,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Inflatable World",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.8102601,
+                    54.5753366,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "DJ's Golf Driving Range",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.071139,
+                    54.488133,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Todds Leap Activity Centre",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        }
+    ]
+}

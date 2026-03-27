@@ -1,0 +1,47 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.6777002,
+                    55.1193997,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "The Jet Centre - Cinema, 10 Pin Bowling, Mini Golf, Children Soft Play, Arcade.",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.671925,
+                    54.843889,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "R Crawford & Co",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        }
+    ]
+}

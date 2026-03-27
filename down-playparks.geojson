@@ -1,0 +1,89 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.186412,
+                    54.0985587,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Kilbroney Caravan Park",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.6766438,
+                    54.3820064,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Delamont Country Park",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.9596006,
+                    54.2679949,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Castlewellan Forest Park",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -5.9402786,
+                    54.2245363,
+                    0
+                ]
+            },
+            "properties": {
+                "name": "Tollymore Forest Park",
+                "styleUrl": "#icon-1899-0288D1-nodesc",
+                "styleHash": "48999a20",
+                "styleMapHash": {
+                    "normal": "#icon-1899-0288D1-nodesc-normal",
+                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
+                },
+                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+            }
+        }
+    ]
+}

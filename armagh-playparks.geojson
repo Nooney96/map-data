@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loughgall Country Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.6031956, 54.4083095, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maghery Country Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.5725185, 54.5128773, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gosford Forest Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.5136122, 54.3070762, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peatlands Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.6150067, 54.4838525, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Scarva Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3615346, 54.3297639, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Edenvilla Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.4297348, 54.4272215, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxford Island Nature Reserve",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3850435, 54.4956526, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Slieve Gullion Forest Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.4089041, 54.1160255, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lurgan Park",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3262155, 54.464395, 0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tannaghmore Gardens & Animal Farm",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3811845, 54.4645887, 0]
+      }
+    }
+  ]
+}

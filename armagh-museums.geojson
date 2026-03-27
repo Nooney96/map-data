@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "National Trust - The Argory",
+        "styleUrl": "#icon-1899-0288D1-nodesc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.6577006,
+          54.4648305,
+          0
+        ]
+      }
+    }
+  ]
+}
