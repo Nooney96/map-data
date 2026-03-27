@@ -1,142 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+function updateMap() {
+    document.getElementById('loader').style.display = 'block';
+    markers.clearLayers(); // Clear old pins
     
-    <style>
-        html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
-        #county-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); width: 90%; overflow-x: auto; white-space: nowrap; }
-        .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; }
-        .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
-        #filter-bar { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 92%; max-width: 650px; overflow-x: auto; justify-content: space-around; }
-        .filter-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; min-width: 65px; }
-        .filter-item img { width: 28px; height: 28px; background: #f8f8f8; padding: 10px; border-radius: 50%; }
-        .filter-item.active img { border: 2px solid #2e7d32; background: #c8e6c9; }
-        .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; }
-        #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 280px; }
-        .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 42px; height: 42px; text-align: center; line-height: 42px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
-        #locate-btn { top: 80px; color: #2196F3; font-weight: bold; }
-        #info-btn { top: 135px; background: #2e7d32; color: white; }
-        #suggest-btn { top: 190px; background: #ff9800; color: white; }
-        .btn-container { display: flex; gap: 5px; margin-top: 10px; }
-        .map-btn { padding: 8px; border-radius: 5px; font-weight: bold; font-size: 11px; text-decoration: none; text-align: center; flex: 1; cursor: pointer; }
-        .dir-btn { background: #2e7d32; color: white !important; }
-        .share-btn { background: #f0f0f0; color: #333 !important; border: 1px solid #ccc; }
-    </style>
-</head>
-<body>
-
-    <div id="loader"><b>🌱 Finding Adventures...</b></div>
-
-    <div id="locate-btn" class="side-btn" onclick="locateUser()">🎯</div>
-    <div id="info-btn" class="side-btn" onclick="alert('Wee Adventurers NI: Discover the best of NI!')">❓</div>
-    <div id="suggest-btn" class="side-btn" onclick="window.location.href='mailto:rossnoonan85@gmail.com'">➕</div>
+    // 1. Change the extension to .geojson
+    var fileName = currentCounty + '-' + currentCategory + '.geojson';
+    var cacheBuster = Math.floor(Math.random() * 1000);
     
-    <div id="county-bar">
-        <div class="county-item active" onclick="setCounty('all', this)">NI ALL</div>
-        <div class="county-item" onclick="setCounty('tyrone', this)">TYRONE</div>
-        <div class="county-item" onclick="setCounty('antrim', this)">ANTRIM</div>
-        <div class="county-item" onclick="setCounty('down', this)">DOWN</div>
-        <div class="county-item" onclick="setCounty('north_down', this)">NORTH DOWN</div>
-        <div class="county-item" onclick="setCounty('fermanagh', this)">FERMANAGH</div>
-        <div class="county-item" onclick="setCounty('armagh', this)">ARMAGH</div>
-        <div class="county-item" onclick="setCounty('derry', this)">DERRY</div>
-    </div>
+    // 2. Point to your GitHub file
+    var url = 'https://raw.githubusercontent.com/Nooney96/map-data/main/' + fileName + '?v=' + cacheBuster;
 
-    <div id="filter-bar">
-        <div class="filter-item active" onclick="setCategory('playparks', this)">
-            <img src="https://img.icons8.com/color/48/playground.png"><span>Parks</span>
-        </div>
-        <div class="filter-item" onclick="setCategory('museums', this)">
-            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/external-museum-wayfinding-flaticons-flat-flat-icons.png"><span>Museums</span>
-        </div>
-        <div class="filter-item" onclick="setCategory('beach', this)">
-            <img src="https://img.icons8.com/doodle/48/beach--v1.png"><span>Beach</span>
-        </div>
-        <div class="filter-item" onclick="setCategory('animals', this)">
-            <img src="https://cdn-icons-png.flaticon.com/512/1998/1998671.png"><span>Animals</span>
-        </div>
-        <div class="filter-item" onclick="setCategory('indoors', this)">
-            <img src="https://img.icons8.com/external-icongeek26-linear-colour-icongeek26/64/external-bouncy-castle-playground-icongeek26-linear-colour-icongeek26.png"><span>Indoor</span>
-        </div>
-        <div class="filter-item" onclick="setCategory('sports', this)">
-            <img src="https://cdn-icons-png.flaticon.com/512/857/857418.png"><span>Sports</span>
-        </div>
-    </div>
-
-    <div id="map"></div>
-
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
-    
-    <script>
-        // --- SPEED BOOST: preferCanvas set to true ---
-        var map = L.map('map', { 
-            zoomControl: false, 
-            preferCanvas: true 
-        }).setView([54.60, -6.60], 8);
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-        
-        var currentCounty = 'all', currentCategory = 'playparks';
-        var markers = L.markerClusterGroup({ 
-            chunkedLoading: true, // Smooths out the UI while pins load
-            disableClusteringAtZoom: 16 // Shows individual sprouts when zoomed in close
-        }); 
-        var userMarker;
-
-        var sproutIcon = L.icon({ 
-            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', 
-            iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], 
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [41, 41] 
-        });
-
-        function locateUser() { map.locate({setView: true, maxZoom: 14}); }
-        map.on('locationfound', function(e) {
-            if (userMarker) { map.removeLayer(userMarker); }
-            userMarker = L.circleMarker(e.latlng, {radius: 8, color: '#2196F3', fillOpacity: 0.8}).addTo(map);
-            userMarker.bindPopup("You are here!").openPopup();
-        });
-
-        function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
-        function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
-
-        function updateMap() {
-            document.getElementById('loader').style.display = 'block';
-            markers.clearLayers();
-            
-            var fileName = currentCounty + '-' + currentCategory + '.kml';
-            var cacheBuster = Math.floor(Math.random() * 1000);
-            var safeUrl = 'https://api.allorigins.win/raw?url=' + encodeURIComponent('https://raw.githubusercontent.com/Nooney96/map-data/main/' + fileName + '?v=' + cacheBuster);
-
-            var customLayer = L.geoJson(null, {
-                pointToLayer: (f, l) => L.marker(l, {icon: sproutIcon}),
+    // 3. Fetch the data (No Omnivore needed!)
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            var geojsonLayer = L.geoJSON(data, {
+                pointToLayer: (feature, latlng) => L.marker(latlng, {icon: sproutIcon}),
                 onEachFeature: (feature, layer) => {
-                    var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
+                    var lat = layer.getLatLng().lat;
+                    var lng = layer.getLatLng().lng;
                     var gUrl = "https://www.google.com/maps/dir/?api=1&destination=" + lat + "," + lng;
-                    var content = "<b>"+feature.properties.name+"</b><div class='btn-container'><a href='"+gUrl+"' target='_blank' class='map-btn dir-btn'>🚗 Directions</a><div onclick='navigator.clipboard.writeText(\""+gUrl+"\").then(()=>alert(\"Link Copied!\"))' class='map-btn share-btn'>🔗 Share</div></div>";
+                    
+                    var content = "<b>" + (feature.properties.name || "Adventure Spot") + "</b>" +
+                                  "<div class='btn-container'>" +
+                                  "<a href='"+gUrl+"' target='_blank' class='map-btn dir-btn'>🚗 Directions</a>" +
+                                  "</div>";
                     layer.bindPopup(content);
                 }
             });
 
-            omnivore.kml(safeUrl, null, customLayer)
-                .on('ready', function() { 
-                    markers.addLayer(customLayer); 
-                    map.addLayer(markers); 
-                    map.fitBounds(markers.getBounds(), { padding: [70, 70] }); 
-                    document.getElementById('loader').style.display = 'none'; 
-                })
-                .on('error', () => { 
-                    document.getElementById('loader').style.display = 'none'; 
-                    alert("No data for: " + fileName); 
-                });
-        }
-        window.onload = updateMap;
-    </script>
-</body>
-</html>
+            markers.addLayer(geojsonLayer);
+            map.addLayer(markers);
+            map.fitBounds(markers.getBounds(), { padding: [70, 70] });
+            document.getElementById('loader').style.display = 'none';
+        })
+        .catch(err => {
+            console.error(err);
+            document.getElementById('loader').style.display = 'none';
+            alert("Working on getting " + fileName + " ready!");
+        });
+}
