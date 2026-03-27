@@ -9,24 +9,19 @@
     
     <style>
         html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
-        
         #county-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); width: 90%; overflow-x: auto; white-space: nowrap; }
         .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
-
         #filter-bar { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 92%; max-width: 650px; overflow-x: auto; justify-content: space-around; }
         .filter-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; min-width: 65px; }
         .filter-item img { width: 28px; height: 28px; background: #f8f8f8; padding: 10px; border-radius: 50%; }
         .filter-item.active img { border: 2px solid #2e7d32; background: #c8e6c9; }
         .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; }
-
         #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 280px; }
-        
         .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 42px; height: 42px; text-align: center; line-height: 42px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
         #locate-btn { top: 80px; color: #2196F3; font-weight: bold; }
         #info-btn { top: 135px; background: #2e7d32; color: white; }
         #suggest-btn { top: 190px; background: #ff9800; color: white; }
-
         .btn-container { display: flex; gap: 5px; margin-top: 10px; }
         .map-btn { padding: 8px; border-radius: 5px; font-weight: bold; font-size: 11px; text-decoration: none; text-align: center; flex: 1; cursor: pointer; }
         .dir-btn { background: #2e7d32; color: white !important; }
@@ -80,11 +75,19 @@
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
     
     <script>
-        var map = L.map('map', { zoomControl: false }).setView([54.60, -6.60], 8);
+        // --- SPEED BOOST: preferCanvas set to true ---
+        var map = L.map('map', { 
+            zoomControl: false, 
+            preferCanvas: true 
+        }).setView([54.60, -6.60], 8);
+
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         
         var currentCounty = 'all', currentCategory = 'playparks';
-        var markers = L.markerClusterGroup(); // Initialize Clustering
+        var markers = L.markerClusterGroup({ 
+            chunkedLoading: true, // Smooths out the UI while pins load
+            disableClusteringAtZoom: 16 // Shows individual sprouts when zoomed in close
+        }); 
         var userMarker;
 
         var sproutIcon = L.icon({ 
@@ -105,7 +108,7 @@
 
         function updateMap() {
             document.getElementById('loader').style.display = 'block';
-            markers.clearLayers(); // Clear existing clusters
+            markers.clearLayers();
             
             var fileName = currentCounty + '-' + currentCategory + '.kml';
             var cacheBuster = Math.floor(Math.random() * 1000);
@@ -123,8 +126,8 @@
 
             omnivore.kml(safeUrl, null, customLayer)
                 .on('ready', function() { 
-                    markers.addLayer(customLayer); // Add pins to cluster group
-                    map.addLayer(markers); // Add cluster group to map
+                    markers.addLayer(customLayer); 
+                    map.addLayer(markers); 
                     map.fitBounds(markers.getBounds(), { padding: [70, 70] }); 
                     document.getElementById('loader').style.display = 'none'; 
                 })
