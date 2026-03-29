@@ -145,8 +145,8 @@
                             var lat = layer.getLatLng().lat;
                             var lng = layer.getLatLng().lng;
                             
-                            // Official Google Maps Directions Link
-                            var gUrl = "https://www.google.com/maps/dir/?api=1&destination=" + lat + "," + lng;
+                            // This format encodes the name so Google Maps displays it as the destination
+                            var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng + "(" + encodeURIComponent(spotName) + ")";
                             
                             var content = `
                                 <div style="text-align:center; padding:5px; min-width:140px;">
