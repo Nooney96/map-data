@@ -87,8 +87,27 @@
         var currentCounty = 'all', currentCategory = 'playparks';
         var markers = L.markerClusterGroup({ chunkedLoading: true, disableClusteringAtZoom: 16 }); 
         var userMarker;
-        var sproutIcon = L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [41, 41] });
+        // --- THE NEW ICON LIBRARY ---
+// Common setup for all icons
+const iconConfig = {
+    iconSize: [32, 43], // A bit larger for better mobile visibility
+    iconAnchor: [16, 43], // The base of the pin
+    popupAnchor: [0, -40], // Where the popup sprouts from
+    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+    shadowSize: [43, 43],
+    shadowAnchor: [16, 43]
+};
 
+// Define an icon for each category from the "Leaflet Color Markers" library
+const mapIcons = {
+    'playparks': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' }),
+    'museums': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png' }),
+    'beach': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png' }),
+    'animals': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png' }),
+    'indoors': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png' }),
+    'sports': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png' }),
+    'all': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' }) // Default
+};
         function locateUser() { map.locate({setView: true, maxZoom: 14}); }
         map.on('locationfound', function(e) {
             if (userMarker) { map.removeLayer(userMarker); }
