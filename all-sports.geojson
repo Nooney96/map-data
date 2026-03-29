@@ -3,233 +3,101 @@
     "features": [
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.549806,
-                    54.952266,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.549806, 54.952266] },
             "properties": {
                 "name": "The Lake Kilrea WaterPark",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Ireland's giant inflatable water park! Features massive slides, obstacles, and a 'total wipeout' style experience on the lake.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.66994,
-                    54.724972,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.66994, 54.724972] },
             "properties": {
                 "name": "Jungle NI",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "One of the best adventure centers in NI. Offering paintball, zorbing, tree-top high ropes, and seasonal events like the Fright Night.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.39185,
-                    54.44587,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.39185, 54.44587] },
             "properties": {
-                "name": "Airtastic Entertainment Centre Craigavon - Trampoline and Ninja",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Airtastic Craigavon",
+                "description": "A huge indoor entertainment hub. Features a trampoline park, ninja course, laser tag, and bowling all under one roof.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.952034,
-                    54.26062,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.952034, 54.26062] },
             "properties": {
                 "name": "Life Adventure Centre",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Based in Castlewellan, offering mountain bike hire, kayaking, and canoeing on the lake. Great for active families.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.894679,
-                    54.524062,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.894679, 54.524062] },
             "properties": {
                 "name": "Let's Go Hydro",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A premier water sports park with a huge inflatable aqua park, cable wakeboarding, and luxury glamping pods.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.238099,
-                    54.721465,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.238099, 54.721465] },
             "properties": {
                 "name": "Castlewood Tree Top Adventure",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Climb, swing, and zip through the trees at Antrim Lough Shore. A brilliant challenge for brave little adventurers.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.987327,
-                    54.573383,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.987327, 54.573383] },
             "properties": {
                 "name": "Andersonstown Leisure Centre",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Home to the 'Surf Belfast' indoor wave rider and a fantastic water park with three high-speed water slides.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.040934,
-                    54.500232,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.040934, 54.500232] },
             "properties": {
-                "name": "High Rise - Family Adventure Centre Lisburn",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "High Rise Lisburn",
+                "description": "A vertical adventure center featuring Clip 'n Climb walls, a massive soft play, and sensory rooms.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.766564,
-                    54.626507,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.766564, 54.626507] },
             "properties": {
                 "name": "Inflatable World",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Indoor bouncy heaven! A huge warehouse filled with every type of inflatable slide and obstacle you can imagine.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.81026,
-                    54.575337,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.81026, 54.575337] },
             "properties": {
                 "name": "DJ's Golf Driving Range",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A family-friendly driving range in Cookstown. Great for a bit of competitive fun or introducing the kids to golf.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.071139,
-                    54.488133,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.071139, 54.488133] },
             "properties": {
                 "name": "Todds Leap Activity Centre",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Extreme adventure! Off-road trucking, the giant swing, zip lines, and clay pigeon shooting for older kids and adults.",
+                "infoUrl": ""
             }
         }
     ]
