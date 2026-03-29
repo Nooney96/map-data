@@ -12,6 +12,7 @@
     <style>
         html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
         
+        /* Navigation Elements */
         #county-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); width: 90%; overflow-x: auto; white-space: nowrap; }
         .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; transition: 0.2s; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
@@ -24,24 +25,26 @@
         
         .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 44px; height: 44px; text-align: center; line-height: 44px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
         #locate-btn { top: 80px; color: #2196F3; }
-        #info-btn { top: 135px; background: #2e7d32; color: white; }
-        #suggest-btn { top: 190px; background: #ff9800; color: white; }
         
-        #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 200px; font-weight: bold; }
+        /* Popup Styling */
+        .popup-card { min-width: 200px; padding: 5px; font-family: 'Segoe UI', sans-serif; }
+        .popup-title { font-size: 18px; font-weight: bold; color: #2e7d32; margin-bottom: 5px; display: block; text-align: center; }
+        .popup-desc { font-size: 13px; color: #555; line-height: 1.4; margin-bottom: 12px; display: block; text-align: center; }
         
-        .btn-stack { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
-        .p-btn { padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 13px; display: block; border: none; cursor: pointer; text-align: center; }
+        .btn-stack { display: flex; flex-direction: column; gap: 6px; }
+        .p-btn { padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 12px; display: block; border: none; cursor: pointer; text-align: center; transition: 0.2s; }
+        
+        .info-btn { background: #e8f5e9; color: #2e7d32 !important; border: 1px solid #2e7d32; }
         .go-btn { background: #2e7d32; color: white !important; }
-        .copy-btn { background: #f0f0f0; color: #333; border: 1px solid #ccc; font-size: 11px; }
+        .copy-btn { background: #f5f5f5; color: #666; font-size: 10px; padding: 6px; }
+
+        #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 200px; font-weight: bold; }
     </style>
 </head>
 <body>
 
-    <div id="loader">🌱 Growing Map...</div>
-
+    <div id="loader">🌱 Loading Adventures...</div>
     <div id="locate-btn" class="side-btn" onclick="locateUser()">🎯</div>
-    <div id="info-btn" class="side-btn" onclick="alert('Welcome to Wee Adventurers NI!')">❓</div>
-    <div id="suggest-btn" class="side-btn" onclick="window.location.href='mailto:rossnoonan85@gmail.com'">➕</div>
     
     <div id="county-bar">
         <div class="county-item active" onclick="setCounty('all', this)">NI ALL</div>
@@ -86,40 +89,26 @@
         
         var currentCounty = 'all', currentCategory = 'playparks';
         var markers = L.markerClusterGroup({ chunkedLoading: true, disableClusteringAtZoom: 16 }); 
-        var userMarker;
-        // --- THE NEW ICON LIBRARY ---
-// Common setup for all icons
-const iconConfig = {
-    iconSize: [32, 43], // A bit larger for better mobile visibility
-    iconAnchor: [16, 43], // The base of the pin
-    popupAnchor: [0, -40], // Where the popup sprouts from
-    shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-    shadowSize: [43, 43],
-    shadowAnchor: [16, 43]
-};
+        
+        const iconConfig = { iconSize: [32, 43], iconAnchor: [16, 43], popupAnchor: [0, -40], shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [43, 43] };
+        const mapIcons = {
+            'playparks': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' }),
+            'museums': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png' }),
+            'beach': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png' }),
+            'animals': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png' }),
+            'indoors': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png' }),
+            'sports': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png' }),
+            'all': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' })
+        };
 
-// Define an icon for each category from the "Leaflet Color Markers" library
-const mapIcons = {
-    'playparks': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' }),
-    'museums': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-violet.png' }),
-    'beach': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-gold.png' }),
-    'animals': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-orange.png' }),
-    'indoors': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png' }),
-    'sports': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png' }),
-    'all': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' }) // Default
-};
         function locateUser() { map.locate({setView: true, maxZoom: 14}); }
-        map.on('locationfound', function(e) {
-            if (userMarker) { map.removeLayer(userMarker); }
-            userMarker = L.circleMarker(e.latlng, {radius: 8, color: '#2196F3', fillOpacity: 0.8}).addTo(map);
-        });
-
-        function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
-        function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
-
+        
         window.copyToClipboard = function(coords) {
             navigator.clipboard.writeText(coords).then(() => alert("Coordinates copied!"));
         };
+
+        function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
+        function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
 
         function updateMap() {
             document.getElementById('loader').style.display = 'block';
@@ -134,17 +123,22 @@ const mapIcons = {
                     var geojsonLayer = L.geoJSON(data, {
                         pointToLayer: (feature, latlng) => L.marker(latlng, {icon: mapIcons[currentCategory] || mapIcons['all']}),
                         onEachFeature: (feature, layer) => {
+                            var p = feature.properties;
                             var lat = layer.getLatLng().lat;
                             var lng = layer.getLatLng().lng;
-                            var spotName = feature.properties.name || "Adventure Spot";
                             
-                            // NAMED COORDINATE FIX: Uses q=lat,lng(Name) format
-                            var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "%2C" + lng + "(" + encodeURIComponent(spotName) + ")";
+                            var name = p.name || "Adventure Spot";
+                            var desc = p.description || "Discover this great local spot! Click below for directions or more details.";
+                            var infoUrl = p.infoUrl || "#";
+                            
+                            var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "%2C" + lng + "(" + encodeURIComponent(name) + ")";
                             
                             var content = `
-                                <div style="text-align:center; padding:5px; min-width:150px;">
-                                    <b style="font-size:16px; display:block; margin-bottom:10px;">${spotName}</b>
+                                <div class="popup-card">
+                                    <span class="popup-title">${name}</span>
+                                    <span class="popup-desc">${desc}</span>
                                     <div class="btn-stack">
+                                        ${p.infoUrl ? `<a href="${infoUrl}" target="_blank" class="p-btn info-btn">ℹ️ VIEW DETAILS</a>` : ''}
                                         <a href="${gUrl}" target="_blank" class="p-btn go-btn">🚗 OPEN GOOGLE MAPS</a>
                                         <button onclick="copyToClipboard('${lat}, ${lng}')" class="p-btn copy-btn">📋 COPY COORDINATES</button>
                                     </div>
@@ -157,9 +151,7 @@ const mapIcons = {
                     map.fitBounds(markers.getBounds(), { padding: [70, 70] });
                     document.getElementById('loader').style.display = 'none';
                 })
-                .catch(() => {
-                    document.getElementById('loader').style.display = 'none';
-                });
+                .catch(() => document.getElementById('loader').style.display = 'none');
         }
         window.onload = updateMap;
     </script>
