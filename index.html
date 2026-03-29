@@ -105,15 +105,23 @@
     var lat = layer.getLatLng().lat;
     var lng = layer.getLatLng().lng;
     
-    // The Professional Destination Link
-    var gUrl = "https://www.google.com/maps/dir/?api=1&destination=" + lat + "," + lng;
+    // Official Google Maps Search Link (Best for Wix)
+    var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
     
-    var content = "<div style='text-align:center; min-width:150px;'>" +
-                  "<b style='font-size:14px;'>" + (feature.properties.name || "Adventure Spot") + "</b><br><br>" +
-                  "<a href='" + gUrl + "' target='_blank' " +
-                  "style='background:#2e7d32; color:white; padding:10px 15px; border-radius:5px; text-decoration:none; font-weight:bold; display:block;'>" +
-                  "🚗 Get Directions</a>" +
-                  "</div>";
+    // App-style Popup Styling
+    var content = `
+        <div style="text-align:center; padding:10px; min-width:160px;">
+            <b style="font-size:16px; color:#333; display:block; margin-bottom:12px;">
+                ${feature.properties.name || "Adventure Spot"}
+            </b>
+            <a href="${gUrl}" target="_blank" 
+               style="background:#2e7d32; color:white; padding:12px 20px; border-radius:8px; 
+                      text-decoration:none; font-weight:bold; display:inline-block; 
+                      box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size:14px;">
+                🚗 GO TO MAPS
+            </a>
+        </div>
+    `;
     layer.bindPopup(content);
 }
                     });
