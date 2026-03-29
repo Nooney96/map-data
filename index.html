@@ -100,14 +100,13 @@
                         pointToLayer: (feature, latlng) => L.marker(latlng, {icon: sproutIcon}),
                         onEachFeature: (feature, layer) => {
                             var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
-                            // Official Google Maps Search API Format
-                            var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
+                            // BRIDGE URL: Points to our second file
+                            var bridgeUrl = "https://nooney96.github.io/map-data/go.html?lat=" + lat + "&lng=" + lng;
                             
-                            // USING TARGET="_TOP" TO BREAK OUT OF THE WIX IFRAME
                             var content = `
                                 <div style="text-align:center; padding:10px; min-width:140px;">
                                     <b style="font-size:15px; display:block; margin-bottom:10px;">${feature.properties.name || "Spot"}</b>
-                                    <a href="${gUrl}" target="_top" 
+                                    <a href="${bridgeUrl}" target="_blank" rel="noopener"
                                        style="background:#2e7d32; color:white; padding:12px; border-radius:6px; 
                                               text-decoration:none; font-weight:bold; display:block; font-size:13px;">
                                         🚗 OPEN GOOGLE MAPS
