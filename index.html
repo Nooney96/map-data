@@ -105,19 +105,30 @@
     var lat = layer.getLatLng().lat;
     var lng = layer.getLatLng().lng;
     
-    // Official Google Maps Search Link
+    // Official Google Maps Search Link (HTTPS is essential for Wix)
     var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
     
+    // WhatsApp Share Link
+    var sUrl = "https://api.whatsapp.com/send?text=Check out this spot on Wee Adventurers NI: " + encodeURIComponent(feature.properties.name || "Adventure Spot") + " - " + gUrl;
+
     var content = `
-        <div style="text-align:center; padding:5px; min-width:140px; font-family: sans-serif;">
-            <b style="font-size:15px; color:#333; display:block; margin-bottom:10px;">
+        <div style="text-align:center; padding:10px; min-width:160px; font-family: Arial, sans-serif;">
+            <b style="font-size:16px; color:#333; display:block; margin-bottom:12px;">
                 ${feature.properties.name || "Adventure Spot"}
             </b>
-            <a href="${gUrl}" target="_blank" 
-               style="background:#2e7d32; color:white; padding:12px; border-radius:6px; 
+            
+            <a href="${gUrl}" target="_blank" rel="noopener noreferrer"
+               style="background:#2e7d32; color:white; padding:12px 20px; border-radius:8px; 
                       text-decoration:none; font-weight:bold; display:block; 
-                      box-shadow: 0 2px 4px rgba(0,0,0,0.2); font-size:13px; text-transform:uppercase;">
-                🚗 Get Directions
+                      box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size:14px; margin-bottom:8px;">
+                🚗 GET DIRECTIONS
+            </a>
+
+            <a href="${sUrl}" target="_blank" rel="noopener noreferrer"
+               style="background:#25D366; color:white; padding:8px 15px; border-radius:8px; 
+                      text-decoration:none; font-weight:bold; display:block; 
+                      font-size:12px;">
+                📱 SHARE TO WHATSAPP
             </a>
         </div>
     `;
