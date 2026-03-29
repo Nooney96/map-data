@@ -26,7 +26,7 @@
 <body>
     <div id="loader"><b>🌱 Finding Adventures...</b></div>
     <div id="locate-btn" class="side-btn" onclick="locateUser()">🎯</div>
-    <div id="info-btn" class="side-btn" onclick="alert('Wee Adventurers NI: Your guide to family fun!')">❓</div>
+    <div id="info-btn" class="side-btn" onclick="alert('Wee Adventurers NI')">❓</div>
     <div id="suggest-btn" class="side-btn" onclick="window.location.href='mailto:rossnoonan85@gmail.com'">➕</div>
     
     <div id="county-bar">
@@ -79,7 +79,6 @@
         map.on('locationfound', function(e) {
             if (userMarker) { map.removeLayer(userMarker); }
             userMarker = L.circleMarker(e.latlng, {radius: 8, color: '#2196F3', fillOpacity: 0.8}).addTo(map);
-            userMarker.bindPopup("You are here!").openPopup();
         });
 
         function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
@@ -100,7 +99,8 @@
                         pointToLayer: (feature, latlng) => L.marker(latlng, {icon: sproutIcon}),
                         onEachFeature: (feature, layer) => {
                             var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
-                            // BRIDGE URL: Points to our second file
+                            
+                            // This points to the Bridge file we are about to create
                             var bridgeUrl = "https://nooney96.github.io/map-data/go.html?lat=" + lat + "&lng=" + lng;
                             
                             var content = `
@@ -122,7 +122,6 @@
                 })
                 .catch(() => {
                     document.getElementById('loader').style.display = 'none';
-                    alert("Working on getting " + fileName + " ready!");
                 });
         }
         window.onload = updateMap;
