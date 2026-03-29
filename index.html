@@ -142,19 +142,26 @@
                     var geojsonLayer = L.geoJSON(data, {
                         pointToLayer: (feature, latlng) => L.marker(latlng, {icon: sproutIcon}),
                         onEachFeature: (feature, layer) => {
-                            var lat = layer.getLatLng().lat;
-                            var lng = layer.getLatLng().lng;
-                            
-                            // This format encodes the name so Google Maps displays it as the destination
-                            var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng + "(" + encodeURIComponent(spotName) + ")";
-                            
-                            var content = `
-                                <div style="text-align:center; padding:5px; min-width:140px;">
-                                    <b style="font-size:15px; display:block; margin-bottom:10px;">${feature.properties.name || "Spot"}</b>
-                                    <a href="${gUrl}" target="_blank" class="popup-btn">🚗 GET DIRECTIONS</a>
-                                </div>`;
-                            layer.bindPopup(content);
-                        }
+    var lat = layer.getLatLng().lat;
+    var lng = layer.getLatLng().lng;
+    var spotName = feature.properties.name || "Adventure Spot";
+    
+    // THE FIX: This URL tells Google Maps to show the name alongside the coordinates
+    var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "%2C" + lng + "(" + encodeURIComponent(spotName) + ")";
+    
+    var content = `
+        <div style="text-align:center; padding:5px; min-width:140px; font-family: sans-serif;">
+            <b style="font-size:15px; color:#333; display:block; margin-bottom:10px;">${spotName}</b>
+            <a href="${gUrl}" target="_blank" 
+               style="background:#2e7d32; color:white; padding:12px; border-radius:8px; 
+                      text-decoration:none; font-weight:bold; display:block; 
+                      box-shadow: 0 2px 4px rgba(0,0,0,0.2); font-size:13px; text-transform:uppercase;">
+                🚗 Directions
+            </a>
+        </div>
+    `;
+    layer.bindPopup(content);
+}
                     });
                     markers.addLayer(geojsonLayer);
                     map.addLayer(markers);
