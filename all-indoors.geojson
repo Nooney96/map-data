@@ -1,509 +1,221 @@
 {
-    "type": "FeatureCollection",
-    "features": [
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.763372,
-                    54.62892,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Inflatable World Cookstown",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.747369,
-                    54.647092,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Wee Adventurers Play Hub",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.970044,
-                    54.495806,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Happy Dayz",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.146198,
-                    54.553242,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Duff Land",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.999107,
-                    54.750852,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Mini Minds Play Cafe",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.040934,
-                    54.500232,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "High Rise - Family Adventure Centre Lisburn",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.320339,
-                    54.74894,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Little Izzie's Play Cafe",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.04678,
-                    54.509904,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Nature and Nurture",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.987327,
-                    54.573383,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Andersonstown Leisure Centre",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.949787,
-                    54.665417,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Little Play Studio",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.020808,
-                    54.560799,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Roar and Explore",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.91551,
-                    54.604734,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "W5",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.02908,
-                    54.503598,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Dobbies Garden Centre Lisburn",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.256826,
-                    54.850844,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Honeybees Playtown",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.068915,
-                    54.740662,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "The Wee Village",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.905671,
-                    54.409605,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Global Adventure Play LTD",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.343224,
-                    54.178496,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "The Imaginarium",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.633002,
-                    54.344105,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Twig & Tumble",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.441337,
-                    54.423008,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "playaway",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.337056,
-                    54.464117,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "The Hive",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.654088,
-                    54.344897,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "The Sensory Xperience",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.39185,
-                    54.44587,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "Airtastic Entertainment Centre Craigavon - Trampoline and Ninja",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.6777,
-                    55.1194,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "The Jet Centre - Cinema, 10 Pin Bowling, Mini Golf, Children Soft Play, Arcade.",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.671925,
-                    54.843889,
-                    0
-                ]
-            },
-            "properties": {
-                "name": "R Crawford & Co",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
-            }
-        }
-    ]
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.763372, 54.62892] },
+      "properties": {
+        "name": "Inflatable World Cookstown",
+        "description": "A massive indoor arena filled with bouncy castles, slides, and obstacles. Perfect for burning off energy on a rainy day.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.747369, 54.647092] },
+      "properties": {
+        "name": "Wee Adventurers Play Hub",
+        "description": "A focused play center in Cookstown designed for younger children to explore and learn through play.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.970044, 54.495806] },
+      "properties": {
+        "name": "Happy Dayz",
+        "description": "A popular soft play center with a large multi-level frame, slides, and a dedicated toddler area.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-7.146198, 54.553242] },
+      "properties": {
+        "name": "Duff Land",
+        "description": "A family-run adventure farm and indoor play area featuring animals and plenty of space to run around.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-5.999107, 54.750852] },
+      "properties": {
+        "name": "Mini Minds Play Cafe",
+        "description": "A unique role-play cafe where children can use their imaginations while parents enjoy a coffee nearby.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.040934, 54.500232] },
+      "properties": {
+        "name": "High Rise Lisburn",
+        "description": "A high-spec adventure center with climbing walls and a huge multi-story soft play area.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.320339, 54.74894] },
+      "properties": {
+        "name": "Little Izzie's Play Cafe",
+        "description": "A cozy play cafe perfect for younger children, featuring role-play areas and great snacks for the adults.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.04678, 54.509904] },
+      "properties": {
+        "name": "Nature and Nurture",
+        "description": "A beautiful sensory-focused play center designed to be a calm and engaging environment for little ones.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-5.987327, 54.573383] },
+      "properties": {
+        "name": "Andersonstown Leisure Centre",
+        "description": "Home to 'Surf Belfast' and a fantastic indoor water park with slides that the whole family will love.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-5.949787, 54.665417] },
+      "properties": {
+        "name": "Little Play Studio",
+        "description": "A creative and imaginative role-play studio where kids can pretend to be doctors, chefs, or shopkeepers.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.020808, 54.560799] },
+      "properties": {
+        "name": "Roar and Explore",
+        "description": "Belfast City Zoo's own indoor soft play. A fun, animal-themed adventure for kids to enjoy after seeing the zoo.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-5.91551, 54.604734] },
+      "properties": {
+        "name": "W5",
+        "description": "Ireland's award-winning science and discovery center. Interactive exhibits for kids of all ages.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.02908, 54.503598] },
+      "properties": {
+        "name": "Dobbies Garden Centre Lisburn",
+        "description": "Includes a great little indoor soft play area and a family-friendly restaurant perfect for a quick stop.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.256826, 54.850844] },
+      "properties": {
+        "name": "Honeybees Playtown",
+        "description": "An imaginative role-play center where children can learn and explore in a miniature version of a real town.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.068915, 54.740662] },
+      "properties": {
+        "name": "The Wee Village",
+        "description": "A charming role-play village located in Antrim, designed specifically for toddlers and young children.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-5.905671, 54.409605] },
+      "properties": {
+        "name": "Global Adventure Play LTD",
+        "description": "A massive soft play and laser tag arena with multi-story frames and exciting slides.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.343224, 54.178496] },
+      "properties": {
+        "name": "The Imaginarium",
+        "description": "A sensory-rich environment for children to explore through art, light, and creative play.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-7.633002, 54.344105] },
+      "properties": {
+        "name": "Twig & Tumble",
+        "description": "A modern and clean soft play area in Enniskillen with a lovely cafe for parents.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.441337, 54.423008] },
+      "properties": {
+        "name": "Playaway",
+        "description": "A well-established soft play center in Portadown with frames for different age groups.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.337056, 54.464117] },
+      "properties": {
+        "name": "The Hive",
+        "description": "An indoor adventure center featuring soft play, sensory areas, and role-play zones.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.654088, 54.344897] },
+      "properties": {
+        "name": "The Sensory Xperience",
+        "description": "A dedicated sensory space designed for children with additional needs, offering a safe and stimulating environment.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.39185, 54.44587] },
+      "properties": {
+        "name": "Airtastic Craigavon",
+        "description": "A massive entertainment hub featuring a trampoline park, ninja course, and soft play area.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.6777, 55.1194] },
+      "properties": {
+        "name": "The Jet Centre",
+        "description": "The ultimate rainy day spot: bowling, cinema, mini-golf, and a huge 'Alley Cats' soft play area.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.671925, 54.843889] },
+      "properties": {
+        "name": "R Crawford & Co",
+        "description": "A family-friendly hardware and lifestyle store that surprisingly houses a lovely little soft play and cafe upstairs!",
+        "infoUrl": ""
+      }
+    }
+  ]
 }
