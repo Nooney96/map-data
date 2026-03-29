@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting to Maps...</title>
+</head>
+<body style="font-family: sans-serif; text-align:center; padding:50px;">
+    <h2>Opening Google Maps...</h2>
+    <p>If it doesn't open automatically, <a id="manual-link" href="#">click here</a>.</p>
+
+    <script>
+        // Get coordinates from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const lat = urlParams.get('lat');
+        const lng = urlParams.get('lng');
+
+        if(lat && lng) {
+            // Official Google Maps Intent
+            const gUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            
+            // Set the manual link just in case
+            document.getElementById('manual-link').href = gUrl;
+
+            // Trigger the jump
+            window.location.replace(gUrl);
+        } else {
+            document.body.innerHTML = "<h2>Invalid Location</h2>";
+        }
+    </script>
+</body>
+</html>
