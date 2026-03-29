@@ -5,168 +5,96 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.9049736,
-                    54.5915474,
-                    0
-                ]
+                "coordinates": [-6.9049736, 54.5915474]
             },
             "properties": {
                 "name": "Pomeroy Forest",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A beautiful forest walk with a hidden fairy trail and a great wooden play area for the kids.",
+                "infoUrl": "https://www.weeadventurers.com/post/pomeroy-forest"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.3011697,
-                    54.6051726,
-                    0
-                ]
+                "coordinates": [-7.3011697, 54.6051726]
             },
             "properties": {
                 "name": "Grange Park (Playground and Outdoor Gym)",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Located in Omagh, this park features a large modern playground and equipment for adults too.",
+                "infoUrl": "https://www.weeadventurers.com/post/grange-park"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.246855,
-                    54.6839536,
-                    0
-                ]
+                "coordinates": [-7.246855, 54.6839536]
             },
             "properties": {
                 "name": "Gortin Glen Forest Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Massive destination park with a huge new playground, mountain bike trails, and deer sightings.",
+                "infoUrl": "https://www.weeadventurers.com/post/gortin-glen"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.0369305,
-                    54.6521387,
-                    0
-                ]
+                "coordinates": [-7.0369305, 54.6521387]
             },
             "properties": {
                 "name": "An Creagán",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A unique bogland experience with a forest play area and lovely walk-ways.",
+                "infoUrl": "https://www.weeadventurers.com/post/an-creag%C3%A0n"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.316009,
-                    54.383629,
-                    0
-                ]
+                "coordinates": [-7.316009, 54.383629]
             },
             "properties": {
                 "name": "Round Lake",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A peaceful lakeside spot in Fivemiletown with a playpark and caravan site.",
+                "infoUrl": "https://www.weeadventurers.com/post/round-lake"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.91155,
-                    54.7226,
-                    0
-                ]
+                "coordinates": [-6.91155, 54.7226]
             },
             "properties": {
                 "name": "Davagh Road",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Home to the Dark Sky observatory and some great forest trails.",
+                "infoUrl": "https://www.weeadventurers.com/post/davagh-forest"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.758135,
-                    54.49031,
-                    0
-                ]
+                "coordinates": [-6.758135, 54.49031]
             },
             "properties": {
                 "name": "Dungannon Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "70-acre setting with a large lake, playpark, and plenty of space for a picnic.",
+                "infoUrl": "https://www.weeadventurers.com/post/dungannon-park"
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.8180858,
-                    54.6429197,
-                    0
-                ]
+                "coordinates": [-6.8180858, 54.6429197]
             },
             "properties": {
                 "name": "Drum Manor Forest Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Famous for its colourful gardens and large playground near the old manor ruins.",
+                "infoUrl": "https://www.weeadventurers.com/post/drum-manor-forest-park"
             }
         }
     ]
