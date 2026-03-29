@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Littlebridge Farm Fresh Ltd",
                 "description": "A local farm favorite known for fresh produce and a friendly atmosphere.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/little-bridge-farm-fresh"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Grangewater open farm",
                 "description": "A great open farm experience where kids can get up close with various farm animals.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/grangewater-open-farm"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Tannaghmore Gardens & Animal Farm",
                 "description": "Features rare breeds of farm animals, beautiful gardens, and a large playpark.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/tannaghmore-gardens"
             }
         },
         {
@@ -46,7 +46,7 @@
             "properties": {
                 "name": "Fermanagh Fun Farm",
                 "description": "A fantastic day out with animal feeding, indoor play, and tractor rides.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/fermanagh-animals"
             }
         },
         {
@@ -58,7 +58,7 @@
             "properties": {
                 "name": "Fort Evergreen Warrenpoint",
                 "description": "Combines an animal farm with a brilliant fort-themed play area and petting zoo.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/fort-evergreen"
             }
         },
         {
@@ -70,7 +70,7 @@
             "properties": {
                 "name": "Mountpanther Farm Park",
                 "description": "Features exotic animals, a huge soft play area, and outdoor bouncy pillows.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/mountpanther-farm-park"
             }
         },
         {
@@ -82,7 +82,7 @@
             "properties": {
                 "name": "WWT Castle Espie",
                 "description": "Explore the wetlands, feed the ducks, and enjoy the stunning views of Strangford Lough.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/wwt-castle-espie"
             }
         },
         {
@@ -94,7 +94,7 @@
             "properties": {
                 "name": "Rosepark Farm",
                 "description": "A family-run farm with a great inland beach, petting area, and beautiful walkways.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/rosepark-farm"
             }
         },
         {
@@ -106,7 +106,7 @@
             "properties": {
                 "name": "Streamvale Farm",
                 "description": "A classic dairy farm experience with puppy cuddling, bottle feeding, and barrel rides.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/streamvale-farm"
             }
         },
         {
@@ -118,7 +118,7 @@
             "properties": {
                 "name": "Glenpark Estate",
                 "description": "A beautiful estate featuring rare breed animals and a lovely woodland setting.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/glenpark-estate"
             }
         }
     ]
