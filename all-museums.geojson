@@ -3,317 +3,137 @@
     "features": [
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.325038,
-                    54.995173,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.325038, 54.995173] },
             "properties": {
                 "name": "The Derry Walls",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Walk the historic 17th-century walls! A great way to see the city from above with plenty of cannons for the kids to spot.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.655511,
-                    54.685658,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.645511, 54.685658] },
             "properties": {
                 "name": "National Trust - Springhill",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A pretty 17th-century house with a famous costume collection and lovely woodland walks. Keep an eye out for the friendly ghost!",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.810897,
-                    55.167781,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.810897, 55.167781] },
             "properties": {
                 "name": "Mussenden Temple",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Perched right on the cliff edge! Explore the ruins of Downhill House and run through the wide open gardens.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -6.657701,
-                    54.46483,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-6.657701, 54.46483] },
             "properties": {
                 "name": "National Trust - The Argory",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Atmospheric wooded estate beside the River Blackwater. Features a great adventure playground and a quirky cafe.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.599556,
-                    54.336938,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.599556, 54.336938] },
             "properties": {
                 "name": "National Trust - Castle Coole",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A grand mansion on the edge of Enniskillen. Perfect for a family stroll around the lake and through the wooded trails.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.644708,
-                    54.346112,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.644708, 54.346112] },
             "properties": {
                 "name": "Enniskillen Castle",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Explore the castle towers and the Inniskillings Museum. Great interactive displays for kids interested in history.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.730619,
-                    54.479435,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.730619, 54.479435] },
             "properties": {
-                "name": "Castle Archdale Holiday Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Castle Archdale",
+                "description": "A lakeside paradise! WWII history meets adventure with forest walks, a butterfly garden, and boat hire.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.725696,
-                    54.260287,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.725696, 54.260287] },
             "properties": {
                 "name": "Florence Court House",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Famous for the Florence Court Yew. There's a great walled garden, a sawmill, and miles of forest paths to explore.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.829533,
-                    54.44769,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.829533, 54.44769] },
             "properties": {
                 "name": "National Trust - Rowallane Garden",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A mix of formal and wild gardens. The 'Natural Play' area and hidden trails are brilliant for little explorers.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.839985,
-                    54.315604,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.839985, 54.315604] },
             "properties": {
                 "name": "Seaforde Gardens & Tropical Butterfly House",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Walk through a jungle filled with free-flying butterflies! Also features a maze and a great garden center cafe.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.899637,
-                    54.39284,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.899637, 54.39284] },
             "properties": {
                 "name": "Montalto Estate",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A must-visit! Home to an incredible award-winning adventure playground, trails, and a beautiful tea room.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.956166,
-                    54.966165,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.956166, 54.966165] },
             "properties": {
                 "name": "Glenarm Castle",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "One of NI's oldest estates. The walled garden is stunning, and the Pizza Pavilion is a great family lunch spot.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -5.91551,
-                    54.604734,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-5.91551, 54.604734] },
             "properties": {
                 "name": "W5",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Interactive science center with hundreds of hands-on exhibits. A perfect rainy-day destination for all ages.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.03693,
-                    54.652139,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.03693, 54.652139] },
             "properties": {
                 "name": "An Creagán",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A forest and river walk filled with local history. Great for a quiet family bike ride or a dander through the trees.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -7.255582,
-                    54.682401,
-                    0
-                ]
-            },
+            "geometry": { "type": "Point", "coordinates": [-7.255582, 54.682401] },
             "properties": {
                 "name": "Glenpark Estate",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Beautiful grounds featuring rare-breed animals, a farm shop, and lovely forest paths.",
+                "infoUrl": ""
             }
         }
     ]
