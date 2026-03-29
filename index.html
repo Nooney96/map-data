@@ -3,30 +3,46 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wee Adventurers NI Map</title>
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+    
     <style>
-        html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
+        html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Top County Bar */
         #county-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); width: 90%; overflow-x: auto; white-space: nowrap; }
-        .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; }
+        .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; transition: 0.3s; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
+        
+        /* Bottom Category Bar */
         #filter-bar { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 92%; max-width: 650px; overflow-x: auto; justify-content: space-around; }
         .filter-item { display: flex; flex-direction: column; align-items: center; cursor: pointer; min-width: 65px; }
-        .filter-item img { width: 28px; height: 28px; background: #f8f8f8; padding: 10px; border-radius: 50%; }
+        .filter-item img { width: 28px; height: 28px; background: #f8f8f8; padding: 10px; border-radius: 50%; border: 2px solid transparent; }
         .filter-item.active img { border: 2px solid #2e7d32; background: #c8e6c9; }
-        .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; }
-        #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 280px; }
-        .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 42px; height: 42px; text-align: center; line-height: 42px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
-        #locate-btn { top: 80px; color: #2196F3; font-weight: bold; }
+        .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; color: #444; }
+        
+        /* Floating Buttons */
+        .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 44px; height: 44px; text-align: center; line-height: 44px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
+        #locate-btn { top: 80px; color: #2196F3; }
         #info-btn { top: 135px; background: #2e7d32; color: white; }
         #suggest-btn { top: 190px; background: #ff9800; color: white; }
+        
+        /* Loader */
+        #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 200px; font-weight: bold; }
+        
+        /* Popup Buttons */
+        .popup-btn { background: #2e7d32; color: white !important; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; text-align: center; font-size: 13px; }
     </style>
 </head>
 <body>
-    <div id="loader"><b>🌱 Finding Adventures...</b></div>
+
+    <div id="loader">🌱 Growing Map...</div>
+
     <div id="locate-btn" class="side-btn" onclick="locateUser()">🎯</div>
-    <div id="info-btn" class="side-btn" onclick="alert('Wee Adventurers NI')">❓</div>
+    <div id="info-btn" class="side-btn" onclick="alert('Welcome to Wee Adventurers NI!')">❓</div>
     <div id="suggest-btn" class="side-btn" onclick="window.location.href='mailto:rossnoonan85@gmail.com'">➕</div>
     
     <div id="county-bar">
@@ -67,22 +83,50 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     
     <script>
-        var map = L.map('map', { zoomControl: false, preferCanvas: true }).setView([54.60, -6.60], 8);
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        // Initialize Map with Canvas Speed Boost
+        var map = L.map('map', { 
+            zoomControl: false, 
+            preferCanvas: true 
+        }).setView([54.60, -6.60], 8);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
         
         var currentCounty = 'all', currentCategory = 'playparks';
-        var markers = L.markerClusterGroup({ chunkedLoading: true, disableClusteringAtZoom: 16 }); 
+        var markers = L.markerClusterGroup({ 
+            chunkedLoading: true, 
+            disableClusteringAtZoom: 16 
+        }); 
+        
         var userMarker;
-        var sproutIcon = L.icon({ iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [41, 41] });
+        var sproutIcon = L.icon({ 
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png', 
+            iconSize: [25, 41], iconAnchor: [12, 41], popupAnchor: [1, -34], 
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [41, 41] 
+        });
 
+        // User Location
         function locateUser() { map.locate({setView: true, maxZoom: 14}); }
         map.on('locationfound', function(e) {
             if (userMarker) { map.removeLayer(userMarker); }
             userMarker = L.circleMarker(e.latlng, {radius: 8, color: '#2196F3', fillOpacity: 0.8}).addTo(map);
         });
 
-        function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
-        function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
+        // Filtering Logic
+        function setCounty(c, el) { 
+            currentCounty = c; 
+            document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); 
+            el.classList.add('active'); 
+            updateMap(); 
+        }
+
+        function setCategory(cat, el) { 
+            currentCategory = cat; 
+            document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); 
+            el.classList.add('active'); 
+            updateMap(); 
+        }
 
         function updateMap() {
             document.getElementById('loader').style.display = 'block';
@@ -98,19 +142,16 @@
                     var geojsonLayer = L.geoJSON(data, {
                         pointToLayer: (feature, latlng) => L.marker(latlng, {icon: sproutIcon}),
                         onEachFeature: (feature, layer) => {
-                            var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
+                            var lat = layer.getLatLng().lat;
+                            var lng = layer.getLatLng().lng;
                             
-                            // This points to the Bridge file we are about to create
-                            var bridgeUrl = "https://nooney96.github.io/map-data/go.html?lat=" + lat + "&lng=" + lng;
+                            // Official Google Maps Directions Link
+                            var gUrl = "https://www.google.com/maps/dir/?api=1&destination=" + lat + "," + lng;
                             
                             var content = `
-                                <div style="text-align:center; padding:10px; min-width:140px;">
+                                <div style="text-align:center; padding:5px; min-width:140px;">
                                     <b style="font-size:15px; display:block; margin-bottom:10px;">${feature.properties.name || "Spot"}</b>
-                                    <a href="${bridgeUrl}" target="_blank" rel="noopener"
-                                       style="background:#2e7d32; color:white; padding:12px; border-radius:6px; 
-                                              text-decoration:none; font-weight:bold; display:block; font-size:13px;">
-                                        🚗 OPEN GOOGLE MAPS
-                                    </a>
+                                    <a href="${gUrl}" target="_blank" class="popup-btn">🚗 GET DIRECTIONS</a>
                                 </div>`;
                             layer.bindPopup(content);
                         }
@@ -122,8 +163,10 @@
                 })
                 .catch(() => {
                     document.getElementById('loader').style.display = 'none';
+                    // Optional: alert("Data coming soon!");
                 });
         }
+
         window.onload = updateMap;
     </script>
 </body>
