@@ -5,126 +5,72 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.652671,
-                    55.204194,
-                    0
-                ]
+                "coordinates": [-6.652671, 55.204194]
             },
             "properties": {
                 "name": "Portrush",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "The classic NI seaside destination! Famous for its two main beaches (East and West Strand) and plenty of amusements nearby.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.650562,
-                    55.205807,
-                    0
-                ]
+                "coordinates": [-6.650562, 55.205807]
             },
             "properties": {
                 "name": "The Arcadia Cafe",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A landmark spot in Portrush. Perfect for a coffee with a view while the kids explore the rocky shoreline and paddling areas.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.828179,
-                    54.646343,
-                    0
-                ]
+                "coordinates": [-5.828179, 54.646343]
             },
             "properties": {
                 "name": "Seapark Bay Beach",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Located in Holywood, this sandy beach has a brilliant large playpark and plenty of green space for a family picnic.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.728669,
-                    54.666124,
-                    0
-                ]
+                "coordinates": [-5.728669, 54.666124]
             },
             "properties": {
                 "name": "Crawfordsburn Country Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Two beautiful beaches tucked away in a country park with forest walks, a waterfall, and a modern visitor center.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.885766,
-                    54.213481,
-                    0
-                ]
+                "coordinates": [-5.885766, 54.213481]
             },
             "properties": {
-                "name": "Newcastle Beach.",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Newcastle Beach",
+                "description": "A stunning beach where the 'Mountains of Mourne sweep down to the sea.' Steps away from the promenade and ice cream shops.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.8075,
-                    55.1685,
-                    0
-                ]
+                "coordinates": [-6.8075, 55.1685]
             },
             "properties": {
                 "name": "Downhill Strand",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "One of NI's longest beaches, famous for the Mussenden Temple perched on the cliff above. You can even drive your car onto this beach!",
+                "infoUrl": ""
             }
         }
     ]
