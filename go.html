@@ -2,29 +2,26 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Redirecting to Maps...</title>
+    <title>Redirecting...</title>
 </head>
-<body style="font-family: sans-serif; text-align:center; padding:50px;">
-    <h2>Opening Google Maps...</h2>
-    <p>If it doesn't open automatically, <a id="manual-link" href="#">click here</a>.</p>
+<body style="font-family: sans-serif; text-align:center; padding-top:100px;">
+    <h2>🚀 Jumping to Google Maps...</h2>
+    <p>If the app doesn't open, <a id="manual" href="#">click here</a>.</p>
 
     <script>
-        // Get coordinates from the URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const lat = urlParams.get('lat');
-        const lng = urlParams.get('lng');
+        const params = new URLSearchParams(window.location.search);
+        const lat = params.get('lat');
+        const lng = params.get('lng');
 
         if(lat && lng) {
-            // Official Google Maps Intent
-            const gUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            // Using the official Search API link
+            const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
+            document.getElementById('manual').href = mapsUrl;
             
-            // Set the manual link just in case
-            document.getElementById('manual-link').href = gUrl;
-
-            // Trigger the jump
-            window.location.replace(gUrl);
+            // This is the magic line that breaks out of the Wix "cage"
+            window.location.replace(mapsUrl);
         } else {
-            document.body.innerHTML = "<h2>Invalid Location</h2>";
+            document.body.innerHTML = "<h3>Location Error. Please try again.</h3>";
         }
     </script>
 </body>
