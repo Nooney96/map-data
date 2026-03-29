@@ -5,210 +5,120 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.645457,
-                    54.648736,
-                    0
-                ]
+                "coordinates": [-6.645457, 54.648736]
             },
             "properties": {
                 "name": "Littlebridge Farm Fresh Ltd",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A local farm favorite known for fresh produce and a friendly atmosphere.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.673232,
-                    54.762537,
-                    0
-                ]
+                "coordinates": [-6.673232, 54.762537]
             },
             "properties": {
                 "name": "Grangewater open farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A great open farm experience where kids can get up close with various farm animals.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.381184,
-                    54.464589,
-                    0
-                ]
+                "coordinates": [-6.381184, 54.464589]
             },
             "properties": {
                 "name": "Tannaghmore Gardens & Animal Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Features rare breeds of farm animals, beautiful gardens, and a large playpark.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.544125,
-                    54.320321,
-                    0
-                ]
+                "coordinates": [-7.544125, 54.320321]
             },
             "properties": {
                 "name": "Fermanagh Fun Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A fantastic day out with animal feeding, indoor play, and tractor rides.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.236544,
-                    54.110126,
-                    0
-                ]
+                "coordinates": [-6.236544, 54.110126]
             },
             "properties": {
                 "name": "Fort Evergreen Warrenpoint",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Combines an animal farm with a brilliant fort-themed play area and petting zoo.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.844629,
-                    54.277665,
-                    0
-                ]
+                "coordinates": [-5.844629, 54.277665]
             },
             "properties": {
                 "name": "Mountpanther Farm Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Features exotic animals, a huge soft play area, and outdoor bouncy pillows.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.69619,
-                    54.530286,
-                    0
-                ]
+                "coordinates": [-5.69619, 54.530286]
             },
             "properties": {
                 "name": "WWT Castle Espie",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Explore the wetlands, feed the ducks, and enjoy the stunning views of Strangford Lough.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.462804,
-                    55.02327,
-                    0
-                ]
+                "coordinates": [-6.462804, 55.02327]
             },
             "properties": {
                 "name": "Rosepark Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A family-run farm with a great inland beach, petting area, and beautiful walkways.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.817242,
-                    54.580075,
-                    0
-                ]
+                "coordinates": [-5.817242, 54.580075]
             },
             "properties": {
                 "name": "Streamvale Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A classic dairy farm experience with puppy cuddling, bottle feeding, and barrel rides.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.2555822,
-                    54.6824009,
-                    0
-                ]
+                "coordinates": [-7.2555822, 54.6839536]
             },
             "properties": {
                 "name": "Glenpark Estate",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A beautiful estate featuring rare breed animals and a lovely woodland setting.",
+                "infoUrl": ""
             }
         }
     ]
