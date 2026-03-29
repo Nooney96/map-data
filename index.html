@@ -105,20 +105,19 @@
     var lat = layer.getLatLng().lat;
     var lng = layer.getLatLng().lng;
     
-    // Official Google Maps Search Link (Best for Wix)
+    // Official Google Maps Search Link
     var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "," + lng;
     
-    // App-style Popup Styling
     var content = `
-        <div style="text-align:center; padding:10px; min-width:160px;">
-            <b style="font-size:16px; color:#333; display:block; margin-bottom:12px;">
+        <div style="text-align:center; padding:5px; min-width:140px; font-family: sans-serif;">
+            <b style="font-size:15px; color:#333; display:block; margin-bottom:10px;">
                 ${feature.properties.name || "Adventure Spot"}
             </b>
             <a href="${gUrl}" target="_blank" 
-               style="background:#2e7d32; color:white; padding:12px 20px; border-radius:8px; 
-                      text-decoration:none; font-weight:bold; display:inline-block; 
-                      box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size:14px;">
-                🚗 GO TO MAPS
+               style="background:#2e7d32; color:white; padding:12px; border-radius:6px; 
+                      text-decoration:none; font-weight:bold; display:block; 
+                      box-shadow: 0 2px 4px rgba(0,0,0,0.2); font-size:13px; text-transform:uppercase;">
+                🚗 Get Directions
             </a>
         </div>
     `;
