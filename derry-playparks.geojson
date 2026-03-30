@@ -1,115 +1,68 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-  <Document>
-    <name>derry-playparks</name>
-    <description/>
-    <Style id="icon-1899-0288D1-nodesc-normal">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>0</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <Style id="icon-1899-0288D1-nodesc-highlight">
-      <IconStyle>
-        <color>ffd18802</color>
-        <scale>1</scale>
-        <Icon>
-          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
-        </Icon>
-        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
-      </IconStyle>
-      <LabelStyle>
-        <scale>1</scale>
-      </LabelStyle>
-      <BalloonStyle>
-        <text><![CDATA[<h3>$[name]</h3>]]></text>
-      </BalloonStyle>
-    </Style>
-    <StyleMap id="icon-1899-0288D1-nodesc">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Folder>
-      <name>Untitled layer</name>
-      <Placemark>
-        <name>Ballyarnett Country Park</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -7.3035911,55.0374665,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Limavady Accessible Play Park</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -6.9533941,55.0434975,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Diversity Park</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -6.7083275,55.1700834,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Claudy Country Park</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -7.1523236,54.9075828,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Ness Country Park</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -7.1869617,54.9463757,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name>Ballyronan Marina</name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -6.5281126,54.7096718,0
-          </coordinates>
-        </Point>
-      </Placemark>
-      <Placemark>
-        <name><![CDATA[Iniscarn Forest & Park]]></name>
-        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
-        <Point>
-          <coordinates>
-            -6.7075174,54.7579105,0
-          </coordinates>
-        </Point>
-      </Placemark>
-    </Folder>
-  </Document>
-</kml>
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-7.3035911, 55.0374665] },
+      "properties": {
+        "name": "Ballyarnett Country Park",
+        "description": "A sprawling green space with a great playground and historic features. Perfect for a family walk or a picnic on a sunny day.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.9533941, 55.0434975] },
+      "properties": {
+        "name": "Limavady Accessible Play Park",
+        "description": "A fantastic, modern, and fully inclusive playground designed so that children of all abilities can play together.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.7083275, 55.1700834] },
+      "properties": {
+        "name": "Diversity Park",
+        "description": "Located at Flowerfield Arts Centre, this is a brilliant inclusive play area with equipment for all ages and abilities.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-7.1523236, 54.9075828] },
+      "properties": {
+        "name": "Claudy Country Park",
+        "description": "A peaceful spot with lovely riverside walks and a woodland trail that kids will love exploring.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-7.1869617, 54.9463757] },
+      "properties": {
+        "name": "Ness Country Park",
+        "description": "Home to the highest waterfall in Northern Ireland! It offers dramatic woodland walks and plenty of steps to tire out little legs.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.5281126, 54.7096718] },
+      "properties": {
+        "name": "Ballyronan Marina",
+        "description": "A beautiful setting on the shores of Lough Neagh with a great playground, forest trail, and picnic areas.",
+        "infoUrl": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.7075174, 54.7579105] },
+      "properties": {
+        "name": "Iniscarn Forest & Park",
+        "description": "A hidden gem for forest walks and getting back to nature. Great for older kids who love to explore and build dens.",
+        "infoUrl": ""
+      }
+    }
+  ]
+}
