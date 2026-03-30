@@ -3,112 +3,92 @@
   "features": [
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.6031956, 54.4083095] },
       "properties": {
         "name": "Loughgall Country Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.6031956, 54.4083095, 0]
+        "description": "A beautiful rural estate with a large lake, forest walks, and a quiet, safe play area perfect for a family stroll.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.5725185, 54.5128773] },
       "properties": {
         "name": "Maghery Country Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.5725185, 54.5128773, 0]
+        "description": "Situated on the shores of Lough Neagh, offering woodland walks and a pleasant playground in a tranquil setting.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.5136122, 54.3070762] },
       "properties": {
         "name": "Gosford Forest Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.5136122, 54.3070762, 0]
+        "description": "Home to the incredible 'All Out Play' adventure playground with giant wooden castles and zip lines. A must-visit!",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.6150067, 54.4838525] },
       "properties": {
         "name": "Peatlands Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.6150067, 54.4838525, 0]
+        "description": "Unique bogland park with a narrow-gauge railway and miles of easy-access walking trails through the woods.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.3615346, 54.3297639] },
       "properties": {
         "name": "Scarva Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.3615346, 54.3297639, 0]
+        "description": "A lovely park beside the Newry Canal towpath. Famous for its local tea rooms and award-winning floral displays.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.4297348, 54.4272215] },
       "properties": {
         "name": "Edenvilla Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.4297348, 54.4272215, 0]
+        "description": "Hidden gem in Portadown featuring the Secret Garden, a bird sanctuary, and a well-maintained playground.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.3850435, 54.4956526] },
       "properties": {
         "name": "Oxford Island Nature Reserve",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.3850435, 54.4956526, 0]
+        "description": "Beautiful nature reserve on Lough Neagh with bird-watching hides, woodland walks, and a lakeside cafe.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.4089041, 54.1160255] },
       "properties": {
         "name": "Slieve Gullion Forest Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.4089041, 54.1160255, 0]
+        "description": "Magical for kids! Features the 'Giant's Lair' adventure trail and a massive adventure play park.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.3262155, 54.464395] },
       "properties": {
         "name": "Lurgan Park",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.3262155, 54.464395, 0]
+        "description": "Ireland's second-largest municipal park. Offers a massive lake, miles of paths, and a great inclusive playground.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [-6.3811845, 54.4645887] },
       "properties": {
         "name": "Tannaghmore Gardens & Animal Farm",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.3811845, 54.4645887, 0]
+        "description": "A family favorite with rare-breed farm animals, beautiful gardens, and one of the largest playgrounds in the area.",
+        "infoUrl": ""
       }
     }
   ]
