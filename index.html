@@ -19,20 +19,28 @@
             z-index: 1000; display: flex; align-items: center; gap: 8px; 
             background: rgba(255,255,255,0.95); padding: 8px 15px; 
             border-radius: 50px; box-shadow: 0 2px 15px rgba(0,0,0,0.2); 
-            width: 92%; max-width: 900px; overflow-x: auto; white-space: nowrap; 
+            width: 92%; max-width: 950px; overflow-x: auto; white-space: nowrap; 
         }
 
         /* INTEGRATED SEARCH BOX */
         #search-container {
             display: flex; align-items: center; background: #fff;
             border: 2px solid #2e7d32; border-radius: 20px;
-            padding: 2px 10px; margin-right: 5px; min-width: 150px;
-            flex-shrink: 0; /* Prevents search from squishing */
+            padding: 2px 10px; margin-right: 5px; min-width: 140px;
+            flex-shrink: 0;
         }
         #search-container input {
-            border: none; outline: none; padding: 5px; font-size: 13px; width: 110px;
+            border: none; outline: none; padding: 5px; font-size: 12px; width: 100px;
         }
-        #search-container span { cursor: pointer; color: #2e7d32; font-weight: bold; }
+        #search-container span { cursor: pointer; color: #2e7d32; font-weight: bold; font-size: 14px; }
+
+        /* RESET BUTTON */
+        .reset-btn { 
+            padding: 8px 15px; font-size: 11px; font-weight: bold; cursor: pointer; 
+            border-radius: 20px; background: #f44336; color: white; border: none; 
+            flex-shrink: 0; transition: 0.2s; 
+        }
+        .reset-btn:hover { background: #d32f2f; }
 
         .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; transition: 0.2s; flex-shrink: 0; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
@@ -46,20 +54,17 @@
         .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 44px; height: 44px; text-align: center; line-height: 44px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
         #locate-btn { top: 85px; color: #2196F3; }
 
-        /* Popup Styling */
-        .popup-card { min-width: 200px; padding: 5px; font-family: 'Segoe UI', sans-serif; }
+        .popup-card { min-width: 200px; padding: 5px; }
         .popup-title { font-size: 18px; font-weight: bold; color: #2e7d32; margin-bottom: 5px; display: block; text-align: center; }
         .popup-desc { font-size: 13px; color: #555; line-height: 1.4; margin-bottom: 12px; display: block; text-align: center; }
         
         .btn-stack { display: flex; flex-direction: column; gap: 6px; }
-        .p-btn { padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 12px; display: block; border: none; cursor: pointer; text-align: center; transition: 0.2s; }
+        .p-btn { padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 12px; display: block; border: none; cursor: pointer; text-align: center; }
         .info-btn { background: #e8f5e9; color: #2e7d32 !important; border: 1px solid #2e7d32; }
         .go-btn { background: #2e7d32; color: white !important; }
         .copy-btn { background: #f5f5f5; color: #666; font-size: 10px; padding: 6px; }
 
         #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 200px; font-weight: bold; }
-        
-        /* Hide default search button */
         .leaflet-control-search { display: none !important; }
     </style>
 </head>
@@ -73,8 +78,10 @@
             <input type="text" id="map-search-input" placeholder="Search spot...">
             <span onclick="triggerSearch()">🔍</span>
         </div>
+        
+        <button class="reset-btn" onclick="resetAll()">RESET ALL</button>
 
-        <div class="county-item active" onclick="setCounty('all', this)">NI ALL</div>
+        <div class="county-item active" id="county-all" onclick="setCounty('all', this)">NI ALL</div>
         <div class="county-item" onclick="setCounty('tyrone', this)">TYRONE</div>
         <div class="county-item" onclick="setCounty('antrim', this)">ANTRIM</div>
         <div class="county-item" onclick="setCounty('down', this)">DOWN</div>
@@ -85,14 +92,14 @@
     </div>
 
     <div id="filter-bar">
-        <div class="filter-item active" onclick="setCategory('playparks', this)">
+        <div class="filter-item active" id="filter-parks" onclick="setCategory('playparks', this)">
             <img src="https://img.icons8.com/color/48/playground.png"><span>Parks</span>
         </div>
         <div class="filter-item" onclick="setCategory('museums', this)">
             <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-museum-museum-flaticons-lineal-color-flat-icons-17.png"><span>Museums</span>
         </div>
         <div class="filter-item" onclick="setCategory('beach', this)">
-            <img src="https://img.icons8.com/doodle/48/beach--v1.png" alt="beach--v1"/><span>Beach</span>
+            <img src="https://img.icons8.com/doodle/48/beach--v1.png" alt="beach--v1"><span>Beach</span>
         </div>
         <div class="filter-item" onclick="setCategory('animals', this)">
             <img src="https://cdn-icons-png.flaticon.com/512/1998/1998671.png"><span>Animals</span>
@@ -135,8 +142,25 @@
             navigator.clipboard.writeText(coords).then(() => alert("Coordinates copied!"));
         };
 
-        function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
-        function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
+        function resetAll() {
+            document.getElementById('map-search-input').value = "";
+            setCounty('all', document.getElementById('county-all'));
+            setCategory('playparks', document.getElementById('filter-parks'));
+        }
+
+        function setCounty(c, el) { 
+            currentCounty = c; 
+            document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); 
+            el.classList.add('active'); 
+            updateMap(); 
+        }
+
+        function setCategory(cat, el) { 
+            currentCategory = cat; 
+            document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); 
+            el.classList.add('active'); 
+            updateMap(); 
+        }
 
         function triggerSearch() {
             var val = document.getElementById('map-search-input').value;
@@ -144,7 +168,7 @@
         }
 
         document.getElementById('map-search-input').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') { triggerSearch(); }
+            if (e.key === 'Enter') triggerSearch();
         });
 
         function updateMap() {
@@ -163,7 +187,7 @@
                         onEachFeature: (feature, layer) => {
                             var p = feature.properties;
                             var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
-                            var name = p.name || "Adventure Spot", desc = p.description || "Discover this great local spot!";
+                            var name = p.name || "Adventure Spot", desc = p.description || "Click below for details!";
                             var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "%2C" + lng + "(" + encodeURIComponent(name) + ")";
                             
                             var content = `
@@ -172,8 +196,8 @@
                                     <span class="popup-desc">${desc}</span>
                                     <div class="btn-stack">
                                         ${p.infoUrl ? `<a href="${p.infoUrl}" target="_blank" class="p-btn info-btn">ℹ️ VIEW DETAILS</a>` : ''}
-                                        <a href="${gUrl}" target="_blank" class="p-btn go-btn">🚗 OPEN GOOGLE MAPS</a>
-                                        <button onclick="copyToClipboard('${lat}, ${lng}')" class="p-btn copy-btn">📋 COPY COORDINATES</button>
+                                        <a href="${gUrl}" target="_blank" class="p-btn go-btn">🚗 DIRECTIONS</a>
+                                        <button onclick="copyToClipboard('${lat}, ${lng}')" class="p-btn copy-btn">📋 COPY COORDS</button>
                                     </div>
                                 </div>`;
                             layer.bindPopup(content);
@@ -187,11 +211,10 @@
                         layer: markers, propertyName: 'name', marker: false, initial: false, 
                         moveToLocation: function(latlng) { map.setView(latlng, 15); }
                     });
-                    
                     searchControl.on('search:locationfound', function(e) { e.layer.openPopup(); });
                     map.addControl(searchControl);
 
-                    if (markers.getLayers().length > 0) { map.fitBounds(markers.getBounds(), { padding: [70, 70] }); }
+                    if (markers.getLayers().length > 0) map.fitBounds(markers.getBounds(), { padding: [70, 70] });
                     document.getElementById('loader').style.display = 'none';
                 })
                 .catch(() => document.getElementById('loader').style.display = 'none');
