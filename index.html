@@ -13,39 +13,20 @@
     <style>
         html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
         
-        /* UPDATED NAVIGATION BAR: No scrollbar, allows wrapping */
+        /* COUNTY BAR */
         #county-bar { 
             position: absolute; top: 15px; left: 50%; transform: translateX(-50%); 
             z-index: 1000; display: flex; align-items: center; justify-content: center;
-            gap: 8px; flex-wrap: wrap; /* Allows items to drop to next line on mobile */
-            background: rgba(255,255,255,0.95); padding: 12px 20px; 
+            gap: 8px; flex-wrap: wrap; background: rgba(255,255,255,0.95); padding: 12px 20px; 
             border-radius: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.2); 
-            width: 90%; max-width: 1100px;
-            overflow: hidden; /* Removes the scrollbar entirely */
+            width: 90%; max-width: 1100px; overflow: hidden;
         }
 
-        /* INTEGRATED SEARCH BOX */
-        #search-container {
-            display: flex; align-items: center; background: #fff;
-            border: 2px solid #2e7d32; border-radius: 20px;
-            padding: 2px 12px; min-width: 160px; flex-shrink: 0;
-        }
+        /* SEARCH & RESET */
+        #search-container { display: flex; align-items: center; background: #fff; border: 2px solid #2e7d32; border-radius: 20px; padding: 2px 12px; min-width: 160px; }
         #search-container input { border: none; outline: none; padding: 6px; font-size: 13px; width: 120px; }
-        #search-container span { cursor: pointer; color: #2e7d32; font-weight: bold; font-size: 16px; }
-
-        /* RESET BUTTON */
-        .reset-btn { 
-            padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; 
-            border-radius: 20px; background: #f44336; color: white; border: none; 
-            flex-shrink: 0; transition: 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .reset-btn:hover { background: #d32f2f; transform: scale(1.05); }
-
-        .county-item { 
-            padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; 
-            border: 1px solid #ddd; border-radius: 20px; background: white; 
-            transition: 0.2s; flex-shrink: 0;
-        }
+        .reset-btn { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border-radius: 20px; background: #f44336; color: white; border: none; }
+        .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
         
         /* BOTTOM FILTER BAR */
@@ -60,13 +41,26 @@
         .filter-item.active img { border: 2px solid #2e7d32; background: #c8e6c9; }
         .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; color: #444; }
         
+        /* SIDE BUTTONS */
         .side-btn { position: absolute; right: 15px; z-index: 1000; background: white; width: 46px; height: 46px; text-align: center; line-height: 46px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 22px; }
-        #locate-btn { top: 120px; color: #2196F3; } /* Moved down to avoid overlapping wrapped top bar */
+        #locate-btn { top: 120px; color: #2196F3; }
 
+        /* BULLSEYE ICON STYLE */
+        .bullseye-icon {
+            background: white;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        /* POPUPS */
         .popup-card { min-width: 200px; padding: 5px; }
         .popup-title { font-size: 18px; font-weight: bold; color: #2e7d32; margin-bottom: 5px; display: block; text-align: center; }
         .popup-desc { font-size: 13px; color: #555; line-height: 1.4; margin-bottom: 12px; display: block; text-align: center; }
-        
         .btn-stack { display: flex; flex-direction: column; gap: 6px; }
         .p-btn { padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 12px; display: block; border: none; cursor: pointer; text-align: center; }
         .info-btn { background: #e8f5e9; color: #2e7d32 !important; border: 1px solid #2e7d32; }
@@ -87,9 +81,7 @@
             <input type="text" id="map-search-input" placeholder="Search spot...">
             <span onclick="triggerSearch()">🔍</span>
         </div>
-        
         <button class="reset-btn" onclick="resetAll()">RESET ALL</button>
-
         <div class="county-item active" id="county-all" onclick="setCounty('all', this)">NI ALL</div>
         <div class="county-item" onclick="setCounty('tyrone', this)">TYRONE</div>
         <div class="county-item" onclick="setCounty('antrim', this)">ANTRIM</div>
@@ -108,7 +100,7 @@
             <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-museum-museum-flaticons-lineal-color-flat-icons-17.png"><span>Museums</span>
         </div>
         <div class="filter-item" onclick="setCategory('beach', this)">
-            <img src="https://img.icons8.com/doodle/48/beach--v1.png" alt="beach--v1"><span>Beach</span>
+            <img src="https://img.icons8.com/doodle/48/beach--v1.png"><span>Beach</span>
         </div>
         <div class="filter-item" onclick="setCategory('animals', this)">
             <img src="https://cdn-icons-png.flaticon.com/512/1998/1998671.png"><span>Animals</span>
@@ -133,6 +125,7 @@
         
         var currentCounty = 'all', currentCategory = 'playparks';
         var markers = L.markerClusterGroup({ chunkedLoading: true, disableClusteringAtZoom: 16 }); 
+        var utilityLayer = L.layerGroup().addTo(map); // Static layer for utility pins
         var searchControl;
 
         const iconConfig = { iconSize: [32, 43], iconAnchor: [16, 43], popupAnchor: [0, -40], shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [43, 43] };
@@ -145,6 +138,29 @@
             'sports': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-blue.png' }),
             'all': L.icon({ ...iconConfig, iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png' })
         };
+
+        // DATA FOR THE BULLSEYE UTILITY PINS
+        const utilities = [
+            { lat: 54.63, lng: -6.65, name: "🎯 Request a Place!", desc: "Found a hidden gem we've missed? Click below to send us your suggestions!", url: "https://www.weeadventurers.com/contact", icon: "🎯" },
+            { lat: 54.58, lng: -6.75, name: "✨ About This Project", desc: "Welcome to the map! Click here to learn about our mission to help NI families explore.", url: "https://www.weeadventurers.com/about-me", icon: "✨" }
+        ];
+
+        // ADD UTILITY PINS TO MAP
+        utilities.forEach(u => {
+            const bIcon = L.divIcon({
+                className: 'bullseye-icon',
+                html: u.icon,
+                iconSize: [44, 44],
+                iconAnchor: [22, 22]
+            });
+            L.marker([u.lat, u.lng], { icon: bIcon }).bindPopup(`
+                <div class="popup-card">
+                    <span class="popup-title">${u.name}</span>
+                    <span class="popup-desc">${u.desc}</span>
+                    <a href="${u.url}" target="_blank" class="p-btn go-btn">LEARN MORE</a>
+                </div>
+            `).addTo(utilityLayer);
+        });
 
         function locateUser() { map.locate({setView: true, maxZoom: 14}); }
         window.copyToClipboard = function(coords) {
@@ -197,7 +213,7 @@
                             var p = feature.properties;
                             var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
                             var name = p.name || "Spot", desc = p.description || "Click below for details!";
-                            var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "%2C" + lng + "(" + encodeURIComponent(name) + ")";
+                            var gUrl = "https://www.google.com/maps/dir/?api=1&destination=" + lat + "," + lng;
                             
                             var content = `
                                 <div class="popup-card">
