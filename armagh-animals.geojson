@@ -3,17 +3,14 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "Tannaghmore Gardens & Animal Farm",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -6.3811845,
-          54.4645887,
-          0
-        ]
+        "coordinates": [-6.3811845, 54.4645887]
+      },
+      "properties": {
+        "name": "Tannaghmore Gardens & Animal Farm",
+        "description": "A fantastic free day out! Features rare breed animals, beautiful gardens, a massive playground, and plenty of space for a family picnic.",
+        "infoUrl": ""
       }
     }
   ]
