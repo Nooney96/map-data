@@ -8,15 +8,33 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
-    
     <link rel="stylesheet" href="https://unpkg.com/leaflet-search@3.0.2/dist/leaflet-search.min.css" />
     
     <style>
         html, body, #map { height: 100%; width: 100%; margin: 0; padding: 0; background: #fff; font-family: 'Segoe UI', sans-serif; }
         
         /* Navigation Elements */
-        #county-bar { position: absolute; top: 15px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); width: 90%; overflow-x: auto; white-space: nowrap; }
-        .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; transition: 0.2s; }
+        #county-bar { 
+            position: absolute; top: 15px; left: 50%; transform: translateX(-50%); 
+            z-index: 1000; display: flex; align-items: center; gap: 8px; 
+            background: rgba(255,255,255,0.95); padding: 8px 15px; 
+            border-radius: 50px; box-shadow: 0 2px 15px rgba(0,0,0,0.2); 
+            width: 92%; max-width: 900px; overflow-x: auto; white-space: nowrap; 
+        }
+
+        /* INTEGRATED SEARCH BOX */
+        #search-container {
+            display: flex; align-items: center; background: #fff;
+            border: 2px solid #2e7d32; border-radius: 20px;
+            padding: 2px 10px; margin-right: 5px; min-width: 150px;
+            flex-shrink: 0; /* Prevents search from squishing */
+        }
+        #search-container input {
+            border: none; outline: none; padding: 5px; font-size: 13px; width: 110px;
+        }
+        #search-container span { cursor: pointer; color: #2e7d32; font-weight: bold; }
+
+        .county-item { padding: 8px 16px; font-size: 11px; font-weight: bold; cursor: pointer; border: 1px solid #ddd; border-radius: 20px; background: white; transition: 0.2s; flex-shrink: 0; }
         .county-item.active { background: #2e7d32; color: white; border-color: #2e7d32; }
         
         #filter-bar { position: absolute; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 1000; display: flex; gap: 8px; background: rgba(255, 255, 255, 0.95); padding: 12px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); width: 92%; max-width: 650px; overflow-x: auto; justify-content: space-around; }
@@ -26,13 +44,8 @@
         .filter-item span { font-size: 8px; margin-top: 6px; font-weight: bold; text-transform: uppercase; color: #444; }
         
         .side-btn { position: absolute; right: 10px; z-index: 1000; background: white; width: 44px; height: 44px; text-align: center; line-height: 44px; border-radius: 50%; box-shadow: 0 2px 10px rgba(0,0,0,0.3); cursor: pointer; font-size: 20px; }
-        #locate-btn { top: 80px; color: #2196F3; }
+        #locate-btn { top: 85px; color: #2196F3; }
 
-        /* Search Bar Styling */
-        .leaflet-control-search { border: 2px solid #2e7d32 !important; border-radius: 25px !important; box-shadow: 0 2px 10px rgba(0,0,0,0.2) !important; overflow: hidden; }
-        .leaflet-control-search .search-input { margin: 4px 0 4px 4px !important; padding: 6px !important; }
-        .leaflet-control-search .search-button { background-color: #2e7d32 !important; border-radius: 50% !important; margin: 4px !important; }
-        
         /* Popup Styling */
         .popup-card { min-width: 200px; padding: 5px; font-family: 'Segoe UI', sans-serif; }
         .popup-title { font-size: 18px; font-weight: bold; color: #2e7d32; margin-bottom: 5px; display: block; text-align: center; }
@@ -45,6 +58,9 @@
         .copy-btn { background: #f5f5f5; color: #666; font-size: 10px; padding: 6px; }
 
         #loader { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2000; background: white; padding: 25px; border-radius: 15px; text-align: center; box-shadow: 0 0 30px rgba(0,0,0,0.2); display: none; width: 200px; font-weight: bold; }
+        
+        /* Hide default search button */
+        .leaflet-control-search { display: none !important; }
     </style>
 </head>
 <body>
@@ -53,6 +69,11 @@
     <div id="locate-btn" class="side-btn" onclick="locateUser()">🎯</div>
     
     <div id="county-bar">
+        <div id="search-container">
+            <input type="text" id="map-search-input" placeholder="Search spot...">
+            <span onclick="triggerSearch()">🔍</span>
+        </div>
+
         <div class="county-item active" onclick="setCounty('all', this)">NI ALL</div>
         <div class="county-item" onclick="setCounty('tyrone', this)">TYRONE</div>
         <div class="county-item" onclick="setCounty('antrim', this)">ANTRIM</div>
@@ -71,7 +92,7 @@
             <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-museum-museum-flaticons-lineal-color-flat-icons-17.png"><span>Museums</span>
         </div>
         <div class="filter-item" onclick="setCategory('beach', this)">
-            <img src="https://img.icons8.com/doodle/48/beach--v1.png" alt="beach--v1"/>"><span>Beach</span>
+            <img src="https://img.icons8.com/doodle/48/beach--v1.png" alt="beach--v1"/><span>Beach</span>
         </div>
         <div class="filter-item" onclick="setCategory('animals', this)">
             <img src="https://cdn-icons-png.flaticon.com/512/1998/1998671.png"><span>Animals</span>
@@ -96,8 +117,6 @@
         
         var currentCounty = 'all', currentCategory = 'playparks';
         var markers = L.markerClusterGroup({ chunkedLoading: true, disableClusteringAtZoom: 16 }); 
-        
-        // Search Control Placeholder
         var searchControl;
 
         const iconConfig = { iconSize: [32, 43], iconAnchor: [16, 43], popupAnchor: [0, -40], shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', shadowSize: [43, 43] };
@@ -119,6 +138,15 @@
         function setCounty(c, el) { currentCounty = c; document.querySelectorAll('.county-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
         function setCategory(cat, el) { currentCategory = cat; document.querySelectorAll('.filter-item').forEach(i => i.classList.remove('active')); el.classList.add('active'); updateMap(); }
 
+        function triggerSearch() {
+            var val = document.getElementById('map-search-input').value;
+            if (searchControl) searchControl.searchText(val);
+        }
+
+        document.getElementById('map-search-input').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') { triggerSearch(); }
+        });
+
         function updateMap() {
             document.getElementById('loader').style.display = 'block';
             markers.clearLayers();
@@ -134,10 +162,8 @@
                         pointToLayer: (feature, latlng) => L.marker(latlng, {icon: mapIcons[currentCategory] || mapIcons['all']}),
                         onEachFeature: (feature, layer) => {
                             var p = feature.properties;
-                            var lat = layer.getLatLng().lat;
-                            var lng = layer.getLatLng().lng;
-                            var name = p.name || "Adventure Spot";
-                            var desc = p.description || "Discover this great local spot! Click below for directions or more details.";
+                            var lat = layer.getLatLng().lat, lng = layer.getLatLng().lng;
+                            var name = p.name || "Adventure Spot", desc = p.description || "Discover this great local spot!";
                             var gUrl = "https://www.google.com/maps/search/?api=1&query=" + lat + "%2C" + lng + "(" + encodeURIComponent(name) + ")";
                             
                             var content = `
@@ -157,26 +183,15 @@
                     markers.addLayer(geojsonLayer);
                     map.addLayer(markers);
                     
-                    // Add Search functionality to the markers
                     searchControl = new L.Control.Search({
-                        layer: markers,
-                        propertyName: 'name',
-                        marker: false,
-                        initial: false,
-                        moveToLocation: function(latlng, title, map) {
-                            map.setView(latlng, 15);
-                        }
+                        layer: markers, propertyName: 'name', marker: false, initial: false, 
+                        moveToLocation: function(latlng) { map.setView(latlng, 15); }
                     });
-
-                    searchControl.on('search:locationfound', function(e) {
-                        e.layer.openPopup();
-                    });
-
+                    
+                    searchControl.on('search:locationfound', function(e) { e.layer.openPopup(); });
                     map.addControl(searchControl);
 
-                    if (markers.getLayers().length > 0) {
-                        map.fitBounds(markers.getBounds(), { padding: [70, 70] });
-                    }
+                    if (markers.getLayers().length > 0) { map.fitBounds(markers.getBounds(), { padding: [70, 70] }); }
                     document.getElementById('loader').style.display = 'none';
                 })
                 .catch(() => document.getElementById('loader').style.display = 'none');
