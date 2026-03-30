@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.6526709,
-                    55.2041945,
-                    0
-                ]
+                "coordinates": [-6.6526709, 55.2041945]
             },
             "properties": {
-                "name": "Portrush",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Portrush Strand",
+                "description": "A classic seaside destination. Perfect for building sandcastles, splashing in the waves, and enjoying a family walk along the shore.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.6505621,
-                    55.2058068,
-                    0
-                ]
+                "coordinates": [-6.6505621, 55.2058068]
             },
             "properties": {
                 "name": "The Arcadia Cafe",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A landmark spot in Portrush. Great for a family treat with beautiful views of the coastline and rocky pools nearby to explore.",
+                "infoUrl": ""
             }
         }
     ]
