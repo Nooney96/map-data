@@ -5,21 +5,12 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.5441246,
-                    54.3203214,
-                    0
-                ]
+                "coordinates": [-7.5441246, 54.3203214]
             },
             "properties": {
                 "name": "Fermanagh Fun Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A fantastic non-profit social enterprise farm. Offers a truly hands-on experience where kids can feed the animals, enjoy tractor rides, and play in the indoor and outdoor areas.",
+                "infoUrl": ""
             }
         }
     ]
