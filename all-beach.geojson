@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Portrush",
                 "description": "The classic NI seaside destination! Famous for its two main beaches (East and West Strand) and plenty of amusements nearby.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/portrush"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "The Arcadia Cafe",
                 "description": "A landmark spot in Portrush. Perfect for a coffee with a view while the kids explore the rocky shoreline and paddling areas.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/arcadia"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Seapark Bay Beach",
                 "description": "Located in Holywood, this sandy beach has a brilliant large playpark and plenty of green space for a family picnic.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/seapark-bay"
             }
         },
         {
@@ -46,7 +46,7 @@
             "properties": {
                 "name": "Crawfordsburn Country Park",
                 "description": "Two beautiful beaches tucked away in a country park with forest walks, a waterfall, and a modern visitor center.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/helen-s-bay"
             }
         },
         {
@@ -58,7 +58,7 @@
             "properties": {
                 "name": "Newcastle Beach",
                 "description": "A stunning beach where the 'Mountains of Mourne sweep down to the sea.' Steps away from the promenade and ice cream shops.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/newcastle-beach"
             }
         },
         {
@@ -70,7 +70,7 @@
             "properties": {
                 "name": "Downhill Strand",
                 "description": "One of NI's longest beaches, famous for the Mussenden Temple perched on the cliff above. You can even drive your car onto this beach!",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/downhill-strand"
             }
         }
     ]
