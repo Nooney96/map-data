@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.8399848,
-                    54.3156044,
-                    0
-                ]
+                "coordinates": [-5.8399848, 54.3156044]
             },
             "properties": {
                 "name": "Seaforde Gardens & Tropical Butterfly House",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A magical experience for kids! Walk among free-flying butterflies in the tropical house and get lost in the beautiful hedge maze.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.8996367,
-                    54.39284,
-                    0
-                ]
+                "coordinates": [-5.8996367, 54.39284]
             },
             "properties": {
                 "name": "Montalto Estate",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Home to one of the best natural play areas in Northern Ireland. Features amazing trails, a treehouse, and a high-quality cafe for the grown-ups.",
+                "infoUrl": ""
             }
         }
     ]
