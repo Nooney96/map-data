@@ -3,46 +3,50 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "playaway",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [-6.4413369, 54.4230078, 0]
+        "coordinates": [-6.4413369, 54.4230078]
+      },
+      "properties": {
+        "name": "Playaway",
+        "description": "A well-established indoor soft play centre in Portadown, offering multi-level climbing frames and safe play zones for various age groups.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.3370561, 54.4641166]
+      },
       "properties": {
         "name": "The Hive",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.3370561, 54.4641166, 0]
+        "description": "An indoor adventure and soft play centre designed to keep kids active and engaged with a variety of play equipment and a friendly atmosphere.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-6.6540882, 54.344897]
+      },
       "properties": {
         "name": "The Sensory Xperience",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-6.6540882, 54.344897, 0]
+        "description": "A wonderful, dedicated sensory space designed for children to explore, relax, and learn in a calm and inclusive environment.",
+        "infoUrl": ""
       }
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Airtastic Entertainment Centre Craigavon - Trampoline and Ninja",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [-6.3918496, 54.4458701, 0]
+        "coordinates": [-6.3918496, 54.4458701]
+      },
+      "properties": {
+        "name": "Airtastic Craigavon",
+        "description": "A massive entertainment hub featuring a trampoline park, ninja course, and high-energy activities for older kids and adventurous little ones.",
+        "infoUrl": ""
       }
     }
   ]
