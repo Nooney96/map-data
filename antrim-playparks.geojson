@@ -5,168 +5,96 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9561663,
-                    54.9661652,
-                    0
-                ]
+                "coordinates": [-5.9561663, 54.9661652]
             },
             "properties": {
                 "name": "Glenarm Castle",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "One of Northern Ireland's oldest estates featuring a stunning walled garden, a charming tea room, and a great woodland play area for the kids.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.6597222,
-                    55.2083333,
-                    0
-                ]
+                "coordinates": [-6.6597222, 55.2083333]
             },
             "properties": {
                 "name": "Ramore Head",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Dramatic coastal walks in Portrush. A fantastic spot for sea air, exploring rock pools, and watching the waves crash against the cliffs.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9148486,
-                    54.5849646,
-                    0
-                ]
+                "coordinates": [-5.9148486, 54.5849646]
             },
             "properties": {
                 "name": "Ormeau Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Belfast's oldest municipal park. It offers large playgrounds, eco-trails, and wide paths perfect for family cycling.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9318863,
-                    54.6606372,
-                    0
-                ]
+                "coordinates": [-5.9318863, 54.6606372]
             },
             "properties": {
                 "name": "V36 Adventure Play Area",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A massive, modern adventure park in Newtownabbey with climbing frames, zip wires, and plenty of space for active kids.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.0408723,
-                    54.5157401,
-                    0
-                ]
+                "coordinates": [-6.0408723, 54.5157401]
             },
             "properties": {
                 "name": "Wallace Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "The jewel of Lisburn! Features a fantastic playground, a duck pond, and safe, flat walking paths perfect for buggies.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9502043,
-                    54.6497451,
-                    0
-                ]
+                "coordinates": [-5.9502043, 54.6497451]
             },
             "properties": {
                 "name": "Cave Hill Country Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Home to Belfast Castle and an excellent playground. The hike to the top offers some of the best views in the city.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.281792,
-                    54.8727931,
-                    0
-                ]
+                "coordinates": [-6.281792, 54.8727931]
             },
             "properties": {
                 "name": "People's Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A lovely park in the heart of Ballymena featuring a lake, a large playground, and well-maintained flower gardens.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.2394971,
-                    54.7157526,
-                    0
-                ]
+                "coordinates": [-6.2394971, 54.7157526]
             },
             "properties": {
-                "name": "Antrim Lough Shore Park Car Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Antrim Lough Shore Park",
+                "description": "Situated on the banks of Lough Neagh. A beautiful spot for a dander, with a great playground and a family-friendly cafe.",
+                "infoUrl": ""
             }
         }
     ]
