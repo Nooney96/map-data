@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.5498055,
-                    54.9522655,
-                    0
-                ]
+                "coordinates": [-6.5498055, 54.9522655]
             },
             "properties": {
                 "name": "The Lake Kilrea WaterPark",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A giant inflatable water park adventure! Perfect for a family day out with massive slides, obstacles, and splashing fun on the lake.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.6699395,
-                    54.7249718,
-                    0
-                ]
+                "coordinates": [-6.6699395, 54.7249718]
             },
             "properties": {
                 "name": "Jungle NI",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Northern Ireland's leading outdoor adventure centre. From zorbing and paintball to tree-top trails and seasonal events, there is something for every brave adventurer.",
+                "infoUrl": ""
             }
         }
     ]
