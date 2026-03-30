@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Seapark Bay Beach",
                 "description": "A lovely sandy beach in Holywood with a great playground and large grassy area. Perfect for a quick seaside escape and a sunset walk.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/seapark-bay"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Crawfordsburn Country Park",
                 "description": "One of NI's most popular parks, featuring two sandy beaches, scenic woodland walks, and a stunning waterfall trail.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/helen-s-bay"
             }
         }
     ]
