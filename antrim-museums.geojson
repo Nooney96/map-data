@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Glenarm Castle & Gardens",
                 "description": "Explore one of Northern Ireland's oldest estates. Featuring a stunning walled garden, a charming tea room, and a fantastic woodland play area for the little ones.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/glenarm-castle"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "W5 Science & Discovery Centre",
                 "description": "The ultimate family day out! With over 250 interactive exhibits across eight themed zones, W5 offers a fun and educational experience for curious minds of all ages.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/___w5"
             }
         }
     ]
