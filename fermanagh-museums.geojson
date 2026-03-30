@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Castle Coole (National Trust)",
                 "description": "A grand neo-classical mansion surrounded by beautiful wooded parkland. Perfect for a family walk, with plenty of space for kids to run and explore.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/castle-coole"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Enniskillen Castle",
                 "description": "Explore the history of Fermanagh within the castle walls. A great spot for kids to learn about knights and history right by the water's edge.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/enniskillen-castle"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Castle Archdale Country Park",
                 "description": "A massive country park on the shores of Lough Erne. Features woodland walks, a WWII museum, a great playground, and boat hire options.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/castle-archdale"
             }
         },
         {
@@ -46,7 +46,7 @@
             "properties": {
                 "name": "Florence Court (National Trust)",
                 "description": "A stunning 18th-century home with miles of forest trails, a walled garden, and a brilliant natural play area for children.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/florence-court"
             }
         }
     ]
