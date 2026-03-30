@@ -7,7 +7,7 @@
             "properties": {
                 "name": "The Lake Kilrea WaterPark",
                 "description": "Ireland's giant inflatable water park! Features massive slides, obstacles, and a 'total wipeout' style experience on the lake.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/derry-londonderry"
             }
         },
         {
@@ -16,7 +16,7 @@
             "properties": {
                 "name": "Jungle NI",
                 "description": "One of the best adventure centres in NI. Offering paintball, zorbing, tree-top high ropes, and seasonal events like the Fright Night.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/services-4"
             }
         },
         {
@@ -25,7 +25,7 @@
             "properties": {
                 "name": "Airtastic Craigavon",
                 "description": "A huge indoor entertainment hub. Features a trampoline park, ninja course, laser tag, and bowling all under one roof.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/airtastic-craigavon"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Life Adventure Centre",
                 "description": "Based in Castlewellan, offering mountain bike hire, kayaking, and canoeing on the lake. Great for active families.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/down"
             }
         },
         {
@@ -43,7 +43,7 @@
             "properties": {
                 "name": "Let's Go Hydro",
                 "description": "A premier water sports park with a huge inflatable aqua park, cable wakeboarding, and luxury glamping pods.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/down"
             }
         },
         {
@@ -52,7 +52,7 @@
             "properties": {
                 "name": "Castlewood Tree Top Adventure",
                 "description": "Climb, swing, and zip through the trees at Antrim Lough Shore. A brilliant challenge for brave little adventurers.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/services-9-1"
             }
         },
         {
@@ -61,7 +61,7 @@
             "properties": {
                 "name": "Andersonstown Leisure Centre",
                 "description": "Home to the 'Surf Belfast' indoor wave rider and a fantastic water park with three high-speed water slides.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/andersonstown-leisure-centre"
             }
         },
         {
@@ -70,7 +70,7 @@
             "properties": {
                 "name": "High Rise Lisburn",
                 "description": "A vertical adventure center featuring Clip 'n Climb walls, a massive soft play, and sensory rooms.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/high-rise"
             }
         },
         {
@@ -79,7 +79,7 @@
             "properties": {
                 "name": "Inflatable World",
                 "description": "Indoor bouncy heaven! A huge warehouse filled with every type of inflatable slide and obstacle you can imagine.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/inflatable-world"
             }
         },
         {
@@ -88,7 +88,7 @@
             "properties": {
                 "name": "DJ's Golf Driving Range",
                 "description": "A family-friendly driving range in Cookstown. Great for a bit of competitive fun or introducing the kids to golf.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/services-4"
             }
         },
         {
@@ -97,7 +97,7 @@
             "properties": {
                 "name": "Todds Leap Activity Centre",
                 "description": "Extreme adventure! Off-road trucking, the giant swing, zip lines, and clay pigeon shooting for older kids and adults.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/services-4"
             }
         }
     ]
