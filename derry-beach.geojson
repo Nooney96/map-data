@@ -5,21 +5,12 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.8075,
-                    55.1685,
-                    0
-                ]
+                "coordinates": [-6.8075, 55.1685]
             },
             "properties": {
                 "name": "Downhill Strand",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "One of Northern Ireland’s most iconic beaches. Famous for its golden sands, the towering Mussenden Temple above, and being one of the few beaches where you can drive your car onto the sand.",
+                "infoUrl": ""
             }
         }
     ]
