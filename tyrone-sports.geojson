@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Inflatable World",
                 "description": "A massive indoor arena filled with bouncy obstacles and giant slides. Perfect for high-energy kids on a rainy day in Cookstown.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/inflatable-world"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "DJ's Golf Driving Range",
                 "description": "A great spot for older kids and teens to practice their swing. Features modern bays and a relaxed atmosphere for budding golfers.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/dj-s-golf-driving-range"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Todds Leap Activity Centre",
                 "description": "Northern Ireland's ultimate adventure destination! From off-road racing to zip lines and giant swings, it's perfect for a big family day out.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/todd-s-leap"
             }
         }
     ]
