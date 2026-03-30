@@ -7,7 +7,7 @@
       "properties": {
         "name": "Loughgall Country Park",
         "description": "A beautiful rural estate with a large lake, forest walks, and a quiet, safe play area perfect for a family stroll.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/loughgall-country-park"
       }
     },
     {
@@ -16,7 +16,7 @@
       "properties": {
         "name": "Maghery Country Park",
         "description": "Situated on the shores of Lough Neagh, offering woodland walks and a pleasant playground in a tranquil setting.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/maghery-country-park"
       }
     },
     {
@@ -25,7 +25,7 @@
       "properties": {
         "name": "Gosford Forest Park",
         "description": "Home to the incredible 'All Out Play' adventure playground with giant wooden castles and zip lines. A must-visit!",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/gosford-forest-park"
       }
     },
     {
@@ -34,7 +34,7 @@
       "properties": {
         "name": "Peatlands Park",
         "description": "Unique bogland park with a narrow-gauge railway and miles of easy-access walking trails through the woods.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/peatlands-park"
       }
     },
     {
@@ -43,7 +43,7 @@
       "properties": {
         "name": "Scarva Park",
         "description": "A lovely park beside the Newry Canal towpath. Famous for its local tea rooms and award-winning floral displays.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/scarva-park"
       }
     },
     {
@@ -52,7 +52,7 @@
       "properties": {
         "name": "Edenvilla Park",
         "description": "Hidden gem in Portadown featuring the Secret Garden, a bird sanctuary, and a well-maintained playground.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/edenvilla-park"
       }
     },
     {
@@ -61,7 +61,7 @@
       "properties": {
         "name": "Oxford Island Nature Reserve",
         "description": "Beautiful nature reserve on Lough Neagh with bird-watching hides, woodland walks, and a lakeside cafe.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/oxford-island"
       }
     },
     {
@@ -70,7 +70,7 @@
       "properties": {
         "name": "Slieve Gullion Forest Park",
         "description": "Magical for kids! Features the 'Giant's Lair' adventure trail and a massive adventure play park.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/slieve-gullion"
       }
     },
     {
@@ -79,7 +79,7 @@
       "properties": {
         "name": "Lurgan Park",
         "description": "Ireland's second-largest municipal park. Offers a massive lake, miles of paths, and a great inclusive playground.",
-        "infoUrl": ""
+        "infoUrl": "https://www.weeadventurers.com/post/lurgan-park"
       }
     },
     {
@@ -87,8 +87,8 @@
       "geometry": { "type": "Point", "coordinates": [-6.3811845, 54.4645887] },
       "properties": {
         "name": "Tannaghmore Gardens & Animal Farm",
-        "description": "A family favorite with rare-breed farm animals, beautiful gardens, and one of the largest playgrounds in the area.",
-        "infoUrl": ""
+        "description": "A family favourite with rare-breed farm animals, beautiful gardens, and one of the largest playgrounds in the area.",
+        "infoUrl": "https://www.weeadventurers.com/post/tannaghmore-gardens"
       }
     }
   ]
