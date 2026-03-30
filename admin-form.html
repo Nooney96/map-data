@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wee Adventurers | Map Admin</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; padding: 40px; color: #333; }
+        .container { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        h2 { color: #2e7d32; text-align: center; }
+        label { display: block; margin: 15px 0 5px; font-weight: bold; font-size: 14px; }
+        input, textarea, select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; background: #2e7d32; color: white; border: none; border-radius: 8px; font-weight: bold; margin-top: 20px; cursor: pointer; }
+        #output-container { margin-top: 30px; display: none; }
+        pre { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 12px; }
+        .copy-hint { font-size: 12px; color: #666; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>🌱 New Location Generator</h2>
+    
+    <label>Location Name</label>
+    <input type="text" id="name" placeholder="e.g. Gortin Glen Forest Park">
+
+    <label>Coordinates (Latitude, Longitude)</label>
+    <input type="text" id="coords" placeholder="54.683, -7.246">
+
+    <label>Description</label>
+    <textarea id="desc" rows="3" placeholder="Describe the spot..."></textarea>
+
+    <label>Website Link (infoUrl)</label>
+    <input type="text" id="url" placeholder="https://www.weeadventurers.com/post/...">
+
+    <button onclick="generateCode()">GENERATE GEOJSON CODE</button>
+
+    <div id="output-container">
+        <p class="copy-hint">✅ Success! Copy the code below and paste it into your GitHub file:</p>
+        <pre id="output"></pre>
+    </div>
+</div>
+
+<script>
+    function generateCode() {
+        const name = document.getElementById('name').value;
+        const coordsRaw = document.getElementById('coords').value.split(',');
+        const desc = document.getElementById('desc').value;
+        const url = document.getElementById('url').value;
+
+        if(coordsRaw.length < 2) { alert("Please enter valid coordinates!"); return; }
+
+        const lat = parseFloat(coordsRaw[0].trim());
+        const lng = parseFloat(coordsRaw[1].trim());
+
+        const geojsonSnippet = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [lng, lat]
+            },
+            "properties": {
+                "name": name,
+                "description": desc,
+                "infoUrl": url
+            }
+        };
+
+        // Display with comma for easy appending
+        document.getElementById('output').textContent = JSON.stringify(geojsonSnippet, null, 4) + ",";
+        document.getElementById('output-container').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
