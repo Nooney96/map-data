@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.6454568,
-                    54.6487357,
-                    0
-                ]
+                "coordinates": [-6.6454568, 54.6487357]
             },
             "properties": {
-                "name": "Littlebridge Farm Fresh Ltd",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Littlebridge Farm Fresh",
+                "description": "A fantastic local farm shop and family-run business. Famous for its fresh local produce and welcoming atmosphere for families visiting the area.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.6732321,
-                    54.7625371,
-                    0
-                ]
+                "coordinates": [-6.6732321, 54.7625371]
             },
             "properties": {
-                "name": "Grangewater open farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Grangewater Open Farm",
+                "description": "A wonderful hands-on experience for kids! Get up close with the animals, enjoy the play areas, and experience life on a working farm.",
+                "infoUrl": ""
             }
         }
     ]
