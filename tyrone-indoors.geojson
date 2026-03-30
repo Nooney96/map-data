@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Inflatable World Cookstown",
                 "description": "A massive indoor arena filled with giant inflatables, slides, and bouncy obstacles. An ideal high-energy spot for kids to burn off steam regardless of the weather.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/inflatable-world"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Wee Adventurers Play Hub",
                 "description": "A modern and clean indoor play space in Cookstown. Tailored specifically for younger children and toddlers with imaginative play zones and safe climbing areas.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/wee-adventurers-play-hub"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Happy Dayz",
                 "description": "A popular multi-level soft play centre in Ballygawley. Features large slides, ball pits, and a dedicated cafe area for parents.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/happy-dayz"
             }
         },
         {
@@ -46,7 +46,7 @@
             "properties": {
                 "name": "Duff Land",
                 "description": "Located in Pomeroy, this 'indoor theme park' offers a unique mix of soft play and inflatable fun, making it a favorite for birthday parties and family day trips.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/duff-land"
             }
         }
     ]
