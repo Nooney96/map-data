@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Rosepark Farm",
                 "description": "A fantastic family-run farm with a petting zoo, inland beach, and lovely walkways perfect for a day out.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/rosepark-farm"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Streamvale Farm",
                 "description": "A classic dairy farm experience where kids can cuddle puppies, feed goats, and enjoy tractor rides.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/streamvale-farm"
             }
         }
     ]
