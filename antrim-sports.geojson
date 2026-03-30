@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Castlewood Tree Top Adventure",
                 "description": "High-ropes course and zip-line adventure located at Antrim Loughshore. A perfect challenge for brave young adventurers!",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/castlewood-tree-top-adventure"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Andersonstown Leisure Centre",
                 "description": "Home to 'Surf Belfast' and a world-class indoor water park featuring high-speed slides and family splash zones.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/andersontown-leisure-centre"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "High Rise Lisburn",
                 "description": "An exciting family adventure centre featuring indoor climbing walls, a soft play area, and interactive sensory rooms.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/high-rise"
             }
         }
     ]
