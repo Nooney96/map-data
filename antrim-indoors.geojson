@@ -5,231 +5,132 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9991068,
-                    54.7508522,
-                    0
-                ]
+                "coordinates": [-5.9991068, 54.7508522]
             },
             "properties": {
                 "name": "Mini Minds Play Cafe",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A wonderful spot for little ones to learn and play while parents enjoy a coffee.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.0409336,
-                    54.5002315,
-                    0
-                ]
+                "coordinates": [-6.0409336, 54.5002315]
             },
             "properties": {
-                "name": "High Rise - Family Adventure Centre Lisburn",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "High Rise Lisburn",
+                "description": "Family adventure centre featuring climbing walls, soft play, and sensory rooms.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.3203393,
-                    54.7489403,
-                    0
-                ]
+                "coordinates": [-6.3203393, 54.7489403]
             },
             "properties": {
                 "name": "Little Izzie's Play Cafe",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A cozy play cafe perfect for toddlers and young children to explore safely.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.0467796,
-                    54.5099041,
-                    0
-                ]
+                "coordinates": [-6.0467796, 54.5099041]
             },
             "properties": {
                 "name": "Nature and Nurture",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A unique space focused on natural play and child development.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9873267,
-                    54.5733828,
-                    0
-                ]
+                "coordinates": [-5.9873267, 54.5733828]
             },
             "properties": {
                 "name": "Andersonstown Leisure Centre",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Home to a fantastic indoor water park with slides and splash zones for all ages.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.949787,
-                    54.6654171,
-                    0
-                ]
+                "coordinates": [-5.949787, 54.6654171]
             },
             "properties": {
                 "name": "Little Play Studio",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A creative and imaginative role-play studio for young adventurers.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.0208075,
-                    54.5607987,
-                    0
-                ]
+                "coordinates": [-6.0208075, 54.5607987]
             },
             "properties": {
                 "name": "Roar and Explore",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "An exciting jungle-themed soft play area where kids can burn off plenty of energy.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9155104,
-                    54.6047336,
-                    0
-                ]
+                "coordinates": [-5.9155104, 54.6047336]
             },
             "properties": {
                 "name": "W5",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "The ultimate science and discovery center with interactive exhibits for the whole family.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.02908,
-                    54.503598,
-                    0
-                ]
+                "coordinates": [-6.02908, 54.503598]
             },
             "properties": {
                 "name": "Dobbies Garden Centre Lisburn",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Features a great soft play area and family-friendly cafe alongside the garden center.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.2568265,
-                    54.8508441,
-                    0
-                ]
+                "coordinates": [-6.2568265, 54.8508441]
             },
             "properties": {
                 "name": "Honeybees Playtown",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "An adorable role-play village where children can pretend to be anything they want.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.0689153,
-                    54.7406616,
-                    0
-                ]
+                "coordinates": [-6.0689153, 54.7406616]
             },
             "properties": {
                 "name": "The Wee Village",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A charming and interactive role-play experience designed specifically for little ones.",
+                "infoUrl": ""
             }
         }
     ]
