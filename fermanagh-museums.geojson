@@ -5,84 +5,48 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.5995557,
-                    54.3369377,
-                    0
-                ]
+                "coordinates": [-7.5995557, 54.3369377]
             },
             "properties": {
-                "name": "National Trust - Castle Coole",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Castle Coole (National Trust)",
+                "description": "A grand neo-classical mansion surrounded by beautiful wooded parkland. Perfect for a family walk, with plenty of space for kids to run and explore.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.6447081,
-                    54.3461121,
-                    0
-                ]
+                "coordinates": [-7.6447081, 54.3461121]
             },
             "properties": {
                 "name": "Enniskillen Castle",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Explore the history of Fermanagh within the castle walls. A great spot for kids to learn about knights and history right by the water's edge.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.7306189,
-                    54.4794352,
-                    0
-                ]
+                "coordinates": [-7.7306189, 54.4794352]
             },
             "properties": {
-                "name": "Castle Archdale Holiday Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Castle Archdale Country Park",
+                "description": "A massive country park on the shores of Lough Erne. Features woodland walks, a WWII museum, a great playground, and boat hire options.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.725696,
-                    54.2602866,
-                    0
-                ]
+                "coordinates": [-7.725696, 54.2602866]
             },
             "properties": {
-                "name": "Florence Court House",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Florence Court (National Trust)",
+                "description": "A stunning 18th-century home with miles of forest trails, a walled garden, and a brilliant natural play area for children.",
+                "infoUrl": ""
             }
         }
     ]
