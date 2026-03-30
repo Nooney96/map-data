@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.8281789,
-                    54.6463432,
-                    0
-                ]
+                "coordinates": [-5.8281789, 54.6463432]
             },
             "properties": {
                 "name": "Seapark Bay Beach",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A lovely sandy beach in Holywood with a great playground and large grassy area. Perfect for a quick seaside escape and a sunset walk.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.7286691,
-                    54.666124,
-                    0
-                ]
+                "coordinates": [-5.7286691, 54.666124]
             },
             "properties": {
                 "name": "Crawfordsburn Country Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "One of NI's most popular parks, featuring two sandy beaches, scenic woodland walks, and a stunning waterfall trail.",
+                "infoUrl": ""
             }
         }
     ]
