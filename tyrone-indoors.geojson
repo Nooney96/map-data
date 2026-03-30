@@ -5,84 +5,48 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.763372,
-                    54.6289202,
-                    0
-                ]
+                "coordinates": [-6.763372, 54.6289202]
             },
             "properties": {
                 "name": "Inflatable World Cookstown",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A massive indoor arena filled with giant inflatables, slides, and bouncy obstacles. An ideal high-energy spot for kids to burn off steam regardless of the weather.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.7473693,
-                    54.6470916,
-                    0
-                ]
+                "coordinates": [-6.7473693, 54.6470916]
             },
             "properties": {
                 "name": "Wee Adventurers Play Hub",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A modern and clean indoor play space in Cookstown. Tailored specifically for younger children and toddlers with imaginative play zones and safe climbing areas.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.9700435,
-                    54.4958065,
-                    0
-                ]
+                "coordinates": [-6.9700435, 54.4958065]
             },
             "properties": {
                 "name": "Happy Dayz",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A popular multi-level soft play centre in Ballygawley. Features large slides, ball pits, and a dedicated cafe area for parents.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.1461979,
-                    54.5532421,
-                    0
-                ]
+                "coordinates": [-7.1461979, 54.5532421]
             },
             "properties": {
                 "name": "Duff Land",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Located in Pomeroy, this 'indoor theme park' offers a unique mix of soft play and inflatable fun, making it a favorite for birthday parties and family day trips.",
+                "infoUrl": ""
             }
         }
     ]
