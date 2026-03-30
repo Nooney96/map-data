@@ -1,4 +1,17 @@
 {
     "type": "FeatureCollection",
-    "features": []
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.000000, 0.000000]
+            },
+            "properties": {
+                "name": "New Location Name",
+                "description": "Add a family-friendly description here.",
+                "infoUrl": ""
+            }
+        }
+    ]
 }
