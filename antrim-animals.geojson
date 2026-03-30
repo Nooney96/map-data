@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.4628041,
-                    55.0232701,
-                    0
-                ]
+                "coordinates": [-6.4628041, 55.0232701]
             },
             "properties": {
                 "name": "Rosepark Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A fantastic family-run farm with a petting zoo, inland beach, and lovely walkways perfect for a day out.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.8172416,
-                    54.5800747,
-                    0
-                ]
+                "coordinates": [-5.8172416, 54.5800747]
             },
             "properties": {
                 "name": "Streamvale Farm",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A classic dairy farm experience where kids can cuddle puppies, feed goats, and enjoy tractor rides.",
+                "infoUrl": ""
             }
         }
     ]
