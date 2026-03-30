@@ -10,7 +10,7 @@
             "properties": {
                 "name": "The Derry Walls",
                 "description": "Walk the only remaining completely intact walled city in Ireland. A fantastic way for families to explore history while enjoying elevated views of the city.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/derry-city-walls"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "Springhill (National Trust)",
                 "description": "A beautiful 17th-century estate featuring a 'haunted' house, a charming costume collection, and a wonderful natural play area for children.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/springhill"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Mussenden Temple",
                 "description": "Perched dramatically on the edge of a cliff, this iconic temple offers breathtaking coastal views and beautiful estate walks perfect for a family adventure.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/mussenden-temple"
             }
         }
     ]
