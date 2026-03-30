@@ -5,21 +5,12 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.6961902,
-                    54.5302862,
-                    0
-                ]
+                "coordinates": [-5.6961902, 54.5302862]
             },
             "properties": {
                 "name": "WWT Castle Espie",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A stunning wetland reserve on the shores of Strangford Lough. Perfect for families to get close to nature, feed the ducks, and explore the woodland trails and soft play area.",
+                "infoUrl": ""
             }
         }
     ]
