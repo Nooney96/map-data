@@ -5,21 +5,12 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.8295331,
-                    54.44769,
-                    0
-                ]
+                "coordinates": [-5.8295331, 54.44769]
             },
             "properties": {
-                "name": "National Trust - Rowallane Garden",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Rowallane Garden (National Trust)",
+                "description": "A beautiful and world-renowned garden full of hidden corners to explore. Features lovely natural play areas, woodland walks, and a cozy cafe in the old stable block.",
+                "infoUrl": ""
             }
         }
     ]
