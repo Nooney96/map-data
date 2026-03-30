@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.2365442,
-                    54.1101257,
-                    0
-                ]
+                "coordinates": [-6.2365442, 54.1101257]
             },
             "properties": {
-                "name": "Fort Evergreen Warrenpoint",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Fort Evergreen",
+                "description": "A brilliant petting farm and play fort near Warrenpoint. Kids can meet the animals, enjoy the play areas, and explore the wooden fort—great for a family day out.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.8446293,
-                    54.2776647,
-                    0
-                ]
+                "coordinates": [-5.8446293, 54.2776647]
             },
             "properties": {
                 "name": "Mountpanther Farm Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A high-end farm park experience featuring exotic animals, a huge indoor play area, and seasonal events that the kids will love.",
+                "infoUrl": ""
             }
         }
     ]
