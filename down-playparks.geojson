@@ -5,84 +5,48 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -6.186412,
-                    54.0985587,
-                    0
-                ]
+                "coordinates": [-6.186412, 54.0985587]
             },
             "properties": {
-                "name": "Kilbroney Caravan Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "Kilbroney Park",
+                "description": "Home to the magical Narnia Trail and the 'Cloughmore Stone.' Offers stunning views over Carlingford Lough and a fantastic large playground.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.6766438,
-                    54.3820064,
-                    0
-                ]
+                "coordinates": [-5.6766438, 54.3820064]
             },
             "properties": {
                 "name": "Delamont Country Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Situated on the shores of Strangford Lough. Features a stunning 1km long miniature railway, a massive playground, and the Strangford Stone.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9596006,
-                    54.2679949,
-                    0
-                ]
+                "coordinates": [-5.9596006, 54.2679949]
             },
             "properties": {
                 "name": "Castlewellan Forest Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "Famous for its Peace Maze and beautiful lake. Great for family cycling, forest walks, and seeing the stunning Victorian castle.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -5.9402786,
-                    54.2245363,
-                    0
-                ]
+                "coordinates": [-5.9402786, 54.2245363]
             },
             "properties": {
                 "name": "Tollymore Forest Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A fairytale forest with gothic bridges, stepping stones, and beautiful river walks. A favorite for families and film fans alike.",
+                "infoUrl": ""
             }
         }
     ]
