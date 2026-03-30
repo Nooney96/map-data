@@ -5,42 +5,24 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.7283404,
-                    54.4774472,
-                    0
-                ]
+                "coordinates": [-7.7283404, 54.4774472]
             },
             "properties": {
                 "name": "Castle Archdale Country Park",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A sprawling lakeside park with a WWII history trail, a fantastic adventure playground, and plenty of woodland paths for cycling and walking.",
+                "infoUrl": ""
             }
         },
         {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.6479844,
-                    54.3492535,
-                    0
-                ]
+                "coordinates": [-7.6479844, 54.3492535]
             },
             "properties": {
-                "name": "Round 'O' Jetty",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "name": "The Round 'O' Jetty",
+                "description": "A perfect family spot in Enniskillen with a large playground, open green spaces, and a chance to watch the boats on the Erne. Great for a picnic!",
+                "infoUrl": ""
             }
         }
     ]
