@@ -3,17 +3,14 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "National Trust - The Argory",
-        "styleUrl": "#icon-1899-0288D1-nodesc"
-      },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          -6.6577006,
-          54.4648305,
-          0
-        ]
+        "coordinates": [-6.6577006, 54.4648305]
+      },
+      "properties": {
+        "name": "The Argory (National Trust)",
+        "description": "A beautiful wooded estate on the banks of the River Blackwater. Features a great adventure playground, lovely riverside walks, and a quirky courtyard cafe.",
+        "infoUrl": ""
       }
     }
   ]
