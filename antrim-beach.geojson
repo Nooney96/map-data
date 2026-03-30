@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Portrush Strand",
                 "description": "A classic seaside destination. Perfect for building sandcastles, splashing in the waves, and enjoying a family walk along the shore.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/portrush"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "The Arcadia Cafe",
                 "description": "A landmark spot in Portrush. Great for a family treat with beautiful views of the coastline and rocky pools nearby to explore.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/arcadia"
             }
         }
     ]
