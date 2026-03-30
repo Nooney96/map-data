@@ -10,7 +10,7 @@
             "properties": {
                 "name": "Mini Minds Play Cafe",
                 "description": "A wonderful spot for little ones to learn and play while parents enjoy a coffee.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/mini-minds"
             }
         },
         {
@@ -22,7 +22,7 @@
             "properties": {
                 "name": "High Rise Lisburn",
                 "description": "Family adventure centre featuring climbing walls, soft play, and sensory rooms.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/high-rise"
             }
         },
         {
@@ -34,7 +34,7 @@
             "properties": {
                 "name": "Little Izzie's Play Cafe",
                 "description": "A cozy play cafe perfect for toddlers and young children to explore safely.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/little-izzies"
             }
         },
         {
@@ -46,7 +46,7 @@
             "properties": {
                 "name": "Nature and Nurture",
                 "description": "A unique space focused on natural play and child development.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/nature-nurture"
             }
         },
         {
@@ -58,7 +58,7 @@
             "properties": {
                 "name": "Andersonstown Leisure Centre",
                 "description": "Home to a fantastic indoor water park with slides and splash zones for all ages.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/andersontown-leisure-centre"
             }
         },
         {
@@ -70,7 +70,7 @@
             "properties": {
                 "name": "Little Play Studio",
                 "description": "A creative and imaginative role-play studio for young adventurers.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/little-play-studio"
             }
         },
         {
@@ -82,7 +82,7 @@
             "properties": {
                 "name": "Roar and Explore",
                 "description": "An exciting jungle-themed soft play area where kids can burn off plenty of energy.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/roar-and-explore"
             }
         },
         {
@@ -93,8 +93,8 @@
             },
             "properties": {
                 "name": "W5",
-                "description": "The ultimate science and discovery center with interactive exhibits for the whole family.",
-                "infoUrl": ""
+                "description": "The ultimate science and discovery centre with interactive exhibits for the whole family.",
+                "infoUrl": "https://www.weeadventurers.com/post/___w5"
             }
         },
         {
@@ -105,8 +105,8 @@
             },
             "properties": {
                 "name": "Dobbies Garden Centre Lisburn",
-                "description": "Features a great soft play area and family-friendly cafe alongside the garden center.",
-                "infoUrl": ""
+                "description": "Features a great soft play area and family-friendly cafe alongside the garden centre.",
+                "infoUrl": "https://www.weeadventurers.com/post/dobbies-lisburn"
             }
         },
         {
@@ -118,7 +118,7 @@
             "properties": {
                 "name": "Honeybees Playtown",
                 "description": "An adorable role-play village where children can pretend to be anything they want.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/honeybees-playtown"
             }
         },
         {
@@ -130,7 +130,7 @@
             "properties": {
                 "name": "The Wee Village",
                 "description": "A charming and interactive role-play experience designed specifically for little ones.",
-                "infoUrl": ""
+                "infoUrl": "https://www.weeadventurers.com/post/the-wee-village"
             }
         }
     ]
