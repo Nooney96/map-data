@@ -5,21 +5,12 @@
             "type": "Feature",
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    -7.2555822,
-                    54.6824009,
-                    0
-                ]
+                "coordinates": [-7.2555822, 54.6824009]
             },
             "properties": {
                 "name": "Glenpark Estate",
-                "styleUrl": "#icon-1899-0288D1-nodesc",
-                "styleHash": "48999a20",
-                "styleMapHash": {
-                    "normal": "#icon-1899-0288D1-nodesc-normal",
-                    "highlight": "#icon-1899-0288D1-nodesc-highlight"
-                },
-                "icon": "https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png"
+                "description": "A fantastic family destination featuring a woodland animal trail, a large open-air play area, and an indoor soft play. Perfect for seeing deer and rare breed animals up close.",
+                "infoUrl": ""
             }
         }
     ]
